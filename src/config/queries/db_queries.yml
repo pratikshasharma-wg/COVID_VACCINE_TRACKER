@@ -1,0 +1,115 @@
+CREATE_AUTH_TABLE : |
+  CREATE TABLE IF NOT EXISTS auth(
+  user_id INTEGER PRIMARY KEY,
+  email TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL,
+  role TEXT DEFAULT "Employee",
+  is_def_pwd_changed TEXT DEFAULT 'False')
+
+CREATE_USER_DETAILS_TABLE : |
+  CREATE TABLE IF NOT EXISTS user_details(
+  user_id INTEGER PRIMARY KEY,
+  name TEXT,
+  email TEXT UNIQUE,
+  gender TEXT,
+  FOREIGN KEY(user_id) REFERENCES auth(user_id)
+  )
+
+CREATE_DOSE_DETAILS_TABLE : |
+  CREATE TABLE IF NOT EXISTS dose_details(
+  s_no INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER,
+  vaccine_name TEXT NOT NULL,
+  dose_num INTEGER NOT NULL,
+  dose_date TEXT NOT NULL,
+  dose_cid TEXT UNIQUE NOT NULL,
+  FOREIGN KEY(user_id) REFERENCES user_details(user_id)
+  )
+
+CREATE_ADMIN_APPROVAL_TABLE : |
+  CREATE TABLE IF NOT EXISTS admin_approval(
+  approval_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  dose_num INTEGER NOT NULL,
+  dose_cid TEXT NOT NULL,
+  dose_is_approved TEXT DEFAULT "No",
+  FOREIGN KEY(user_id) REFERENCES user_details(user_id)
+  )
+
+CREATE_VACCINE_TABLE : |
+  CREATE TABLE IF NOT EXISTS vaccine(
+  vaccine_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  vaccine_name TEXT NOT NULL
+  )
+
+USER_DATA : 'SELECT * FROM auth WHERE email = ?'
+
+UPDATE_PWD : 'UPDATE auth SET password = ?, is_def_pwd_changed = "True" WHERE email = ?'
+
+ADD_USER : 'INSERT INTO auth VALUES (?,?,?,"Employee","False")'
+
+FETCH_BY_DOSE : 'SELECT user_id, email, vaccination_status FROM user_details WHERE vaccination_status = ?'
+
+FETCH_BY_VACCINE : |
+  SELECT u.user_id, u.email, d.vaccine_name
+  FROM user_details AS u JOIN dose_details AS d
+  ON u.user_id = d.user_id 
+  WHERE d.vaccine_name = ?
+
+FETCH_BY_DOSE1_DATE : |
+  SELECT u.user_id, u.email, d.vaccine_name, d.dose_date, d.dose_cid
+  FROM user_details AS u JOIN dose_details AS d
+  ON u.user_id = d.user_id WHERE (d.dose_date = ? and d.dose_num = 1)
+
+FETCH_BY_DOSE2_DATE : |
+  SELECT u.user_id, u.email, d.vaccine_name, d.dose_date, d.dose_cid 
+  FROM user_details AS u JOIN dose_details AS d
+  ON u.user_id = d.user_id WHERE (d.dose_date = ? and d.dose_num = 2)
+
+ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (?)'
+
+APPROVE_DOSE_INFO : 'UPDATE admin_approval SET dose_is_approved = "Yes" WHERE approval_id = ?'
+
+FETCH_1APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 1'
+
+FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
+
+FETCH_VACC_STATUS : 'SELECT count(user_id) FROM dose_details WHERE user_id = ?'
+
+FETCH_DOSE_1_DETAILS : 'SELECT * FROM dose_details WHERE user_id = ? and dose_num = 1'
+
+FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = ?'
+
+ADD_DOSE_DETAILS : 'INSERT INTO dose_details (user_id, vaccine_name, dose_num, dose_date,dose_cid) VALUES (?,?,?,?,?)'
+
+ADD_TO_ADMIN_APPROVAL : 'INSERT INTO admin_approval (user_id, dose_num, dose_cid) values (?, ?, ?)'
+
+UPDATE_ADMIN_APPROVAL : 'UPDATE admin_approval SET dose_1_cid = ? WHERE user_id = ?'
+
+UPDATE_DOSE2_DETAILS : 'UPDATE dose_details SET dose_2_date = ?, dose_2_cid = ? WHERE user_id = ?'
+
+UPDATE_ADMIN_APPROVAL2 : 'UPDATE admin_approval SET dose_2_cid = ? WHERE user_id = ?'
+
+SELECT_DOSE1_DATE : 'SELECT dose_1_date FROM dose_details WHERE user_id = ?'
+
+UPDATE_NAME : 'UPDATE user_details SET name = ? WHERE user_id = ?'
+
+UPDATE_GENDER : 'UPDATE user_details SET gender = ? WHERE user_id = ?'
+
+APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Yes"'
+
+ADD_USER_DETAILS : 'INSERT INTO user_details (user_id, email) values (?,?)'
+
+FETCH_AUTH_DATA : 'SELECT * FROM auth WHERE email = ?'
+
+FETCH_VACCINE_NAME :  'SELECT vaccine_name FROM vaccine'
+
+FETCH_USER_DETAILS : 'SELECT user_id, email FROM user_details'
+
+IS_DOSE_ID_ALREADY_PRESENT : 'SELECT * FROM dose_details WHERE dose_cid = ?'
+
+FETCH_VACCINE : 'SELECT * FROM vaccine'
+
+FETCH_DOSE_DETAILS_BY_DOSE_CID : 'SELECT * FROM dose_details WHERE dose_cid = ? '
+
+FETCH_DOSE_DETAILS_BY_DOSE2CID : 'SELECT * FROM dose_details WHERE dose_cid = ? and dose_num = 2'

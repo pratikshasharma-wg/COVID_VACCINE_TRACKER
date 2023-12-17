@@ -1,0 +1,240 @@
+2023-12-11 06:44:49,583 INFO     [main.py:17] None
+2023-12-11 06:57:17,836 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:02:46,021 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:04:32,721 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:06:12,843 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:08:00,172 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:11:23,285 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:11:35,013 INFO     [auth.py:52] Login attempts reducing due to invalid login
+2023-12-11 07:11:50,732 INFO     [auth.py:52] Login attempts reducing due to invalid login
+2023-12-11 07:29:35,032 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 07:34:34,111 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:16:54,297 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:17:52,867 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:19:48,769 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:21:13,301 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:23:06,875 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:23:28,988 INFO     [admin.py:25] Welcome Admin....
+2023-12-11 09:24:20,514 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:24:31,186 INFO     [admin.py:25] Welcome Admin....
+2023-12-11 09:25:13,952 INFO     [admin.py:71] New User Added!
+2023-12-11 09:25:40,285 INFO     [admin.py:71] New User Added!
+2023-12-11 09:28:11,398 INFO     [admin.py:71] New User Added!
+2023-12-11 09:29:02,971 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:29:12,071 INFO     [admin.py:25] Welcome Admin....
+2023-12-11 09:37:08,266 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-11 09:37:15,900 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 14:33:19,781 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:33:59,425 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:34:38,712 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:35:58,144 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:36:52,035 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:38:56,167 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:39:46,343 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:42:21,057 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:43:18,699 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 14:43:27,213 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:12:05,002 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:12:11,373 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:12:23,569 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:16:02,820 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:16:33,493 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:17:34,884 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:17:43,341 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:18:29,210 INFO     [admin.py:72] New User Added!
+2023-12-12 15:18:47,731 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:18:56,137 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:20:29,671 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:21:03,636 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:21:08,431 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:24:20,463 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:24:29,028 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:27:22,669 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:27:42,242 INFO     [admin.py:25] Welcome Admin....
+2023-12-12 15:28:53,626 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-12 15:29:01,399 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 05:49:20,185 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 05:49:31,568 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 05:51:39,747 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 05:51:57,817 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 05:59:16,274 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 05:59:30,527 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:02:04,577 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:02:11,970 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:03:25,275 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:03:34,467 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:09:29,239 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:09:38,787 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:10:51,673 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:10:58,722 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:13:47,095 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:13:53,874 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:17:42,542 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:17:53,336 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:18:06,234 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:18:14,138 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:20:00,387 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:20:07,198 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:22:08,405 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:22:24,073 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:25:12,329 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:25:19,799 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:25:40,956 INFO     [admin.py:72] New User Added!
+2023-12-13 06:25:59,305 INFO     [auth_controllers.py:55] User logged in first time
+2023-12-13 06:26:14,982 INFO     [auth_controllers.py:80] Default Password changed for employee username : 
+2023-12-13 06:26:14,983 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 06:48:56,370 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:49:04,285 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 06:49:48,864 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 06:51:28,746 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:51:43,015 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 06:53:24,377 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:53:31,064 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 06:53:48,442 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 06:53:56,824 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 07:02:11,829 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 07:02:19,811 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 07:02:53,368 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 07:03:01,060 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 07:10:24,674 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 07:10:31,409 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 07:13:58,539 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 07:14:06,434 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-13 10:05:43,054 INFO     [main.py:15] None
+2023-12-13 10:59:03,337 INFO     [main.py:15] None
+2023-12-13 10:59:13,395 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 10:59:41,694 INFO     [main.py:15] None
+2023-12-13 10:59:50,478 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 11:16:53,084 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 11:17:11,548 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 11:18:38,507 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 11:21:40,843 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 11:21:54,031 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-13 11:22:03,397 INFO     [admin.py:25] Welcome Admin....
+2023-12-13 11:22:42,098 INFO     [admin.py:72] New User Added!
+2023-12-14 11:35:18,311 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 11:37:01,579 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 11:37:09,412 INFO     [admin.py:25] Welcome Admin....
+2023-12-14 11:38:00,753 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 11:44:03,649 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 11:44:11,668 INFO     [admin.py:25] Welcome Admin....
+2023-12-14 11:44:23,535 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 11:44:38,239 INFO     [employee.py:81] Profile Updated!
+2023-12-14 11:46:11,662 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 11:46:19,392 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 11:46:57,165 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 11:47:04,470 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 12:01:03,351 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 12:01:10,697 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 12:03:31,781 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 12:03:39,888 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 12:10:38,178 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 12:10:46,076 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 12:10:56,983 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 12:11:03,511 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 12:12:21,087 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 12:12:27,496 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 13:33:00,634 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 13:33:07,489 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 13:33:35,277 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 13:33:43,461 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 13:45:22,741 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 13:45:33,010 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 13:45:58,419 INFO     [employee.py:81] Profile Updated!
+2023-12-14 13:46:12,952 INFO     [admin.py:25] Welcome Admin....
+2023-12-14 13:46:33,858 INFO     [admin.py:72] New User Added!
+2023-12-14 13:52:50,881 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 13:53:01,260 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 13:53:13,683 INFO     [admin.py:21] Welcome Admin....
+2023-12-14 13:53:33,949 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 13:53:42,529 INFO     [admin.py:21] Welcome Admin....
+2023-12-14 13:59:52,657 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:00:05,014 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:04:28,983 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:04:37,204 INFO     [admin.py:21] Welcome Admin....
+2023-12-14 14:04:48,420 INFO     [admin.py:68] New User Added!
+2023-12-14 14:05:00,674 INFO     [auth_controllers.py:55] User logged in first time
+2023-12-14 14:05:10,682 INFO     [auth_controllers.py:80] Default Password changed for employee username : 
+2023-12-14 14:05:10,682 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:05:16,428 INFO     [employee.py:81] Profile Updated!
+2023-12-14 14:05:16,428 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:13:32,735 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:13:46,398 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:14:17,707 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:14:28,310 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:15:08,754 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:15:17,415 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:15:42,116 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:15:50,177 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:16:01,676 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:16:10,675 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:17:08,585 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:17:16,764 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:17:32,232 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:17:40,437 INFO     [employee.py:20] Logs.EMPLOYEE_MSG
+2023-12-14 14:20:17,163 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:20:26,666 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:21:36,355 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:21:45,952 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:23:35,057 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:23:43,159 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:24:23,790 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:24:31,904 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:25:21,155 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:25:28,076 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:26:09,104 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-14 14:26:16,974 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-14 14:26:40,050 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 09:39:33,028 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 09:39:45,248 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 09:41:17,859 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 09:41:28,725 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 09:50:01,590 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 09:50:13,083 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:11:37,985 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 10:11:56,020 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:13:45,771 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 10:13:56,663 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:20:12,330 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 10:20:24,121 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:24:59,233 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 10:25:52,261 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 10:26:00,158 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:26:09,115 INFO     [admin.py:68] New User Added!
+2023-12-15 10:26:53,613 INFO     [auth_controllers.py:55] User logged in first time
+2023-12-15 10:27:19,425 INFO     [auth_controllers.py:80] Default Password changed for employee username : 
+2023-12-15 10:27:19,426 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 10:27:26,056 INFO     [employee.py:82] Profile Updated!
+2023-12-15 10:27:26,056 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 10:28:50,467 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 10:29:14,769 INFO     [approve_dose_info.py:72] Dose 1 details approved for approval_id 1
+2023-12-15 10:29:23,954 INFO     [approve_dose_info.py:72] Dose 2 details approved for approval_id 2
+2023-12-15 11:52:56,751 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 11:53:22,981 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 11:53:31,587 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 11:53:45,168 INFO     [admin.py:68] New User Added!
+2023-12-15 11:54:01,247 INFO     [auth_controllers.py:55] User logged in first time
+2023-12-15 11:54:07,838 INFO     [auth_controllers.py:80] Default Password changed for employee username : 
+2023-12-15 11:54:07,838 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 11:54:12,448 INFO     [employee.py:82] Profile Updated!
+2023-12-15 11:54:12,448 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 11:57:22,164 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 11:57:45,625 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 11:57:57,839 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 11:59:33,162 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 11:59:44,025 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 12:02:20,335 INFO     [main.py:15] Welcome To COVID Vaccine Tracker
+2023-12-15 12:02:31,000 INFO     [admin.py:21] Welcome Admin....
+2023-12-15 12:02:49,100 INFO     [admin.py:68] New User Added!
+2023-12-15 12:02:58,273 INFO     [auth_controllers.py:55] User logged in first time
+2023-12-15 12:03:02,806 INFO     [auth_controllers.py:80] Default Password changed for employee username : 
+2023-12-15 12:03:02,806 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-15 12:03:08,124 INFO     [employee.py:83] Profile Updated!
+2023-12-15 12:03:08,124 INFO     [employee.py:21] Logs.EMPLOYEE_MSG
+2023-12-18 02:17:26,169 ERROR    [main.py:29] Error Occured in application: 'VACCINE_NAMES'
+2023-12-18 02:17:26,173 INFO     [main.py:34] Connection closed. Exiting from application
+2023-12-18 02:17:37,974 ERROR    [main.py:29] Error Occured in application: 'VACCINE_NAMES'
+2023-12-18 02:17:37,974 INFO     [main.py:34] Connection closed. Exiting from application
+2023-12-18 02:19:10,598 INFO     [main.py:19] Welcome To COVID Vaccine Tracker
+2023-12-18 02:19:27,254 INFO     [admin.py:27] Welcome Admin....
+2023-12-18 02:20:04,832 INFO     [main.py:34] Connection closed. Exiting from application

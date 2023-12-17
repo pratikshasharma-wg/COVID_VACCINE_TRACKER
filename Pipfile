@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+maskpass = "*"
+pytest-cov = "*"
+tabulate = "*"
+pyyaml = "*"
+pytest-mock = "*"
+pytest-timeout = "*"
+shortuuid = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

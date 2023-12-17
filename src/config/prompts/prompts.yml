@@ -1,0 +1,143 @@
+
+ADMIN_PROMPT: |
+  *********WELCOME TO ADMIN DASHBOARD*********
+
+  Please select an option:
+  1. Add new employee
+  2. View vaccination status
+  3. Add new vaccine
+  4. View vaccines
+  5. Approve users' dose details
+  6. View Approved details
+  7. Logout
+  8. Exit
+
+  Enter your choice: 
+
+APPROVE_DETAILS_PROMPT : |
+  Please select an option:
+
+  1. Approve dose-1 details
+  2. Approve dose-2 details
+  3. Back 
+
+  Enter: 
+
+VIEW_VACC_STATUS_PROMPT : |
+  Please select an option:
+
+  1. View all employees' vaccination details
+  2. View Dose-1 vaccinated employees
+  3. View Dose-2 vaccinated employees
+  4. View unvaccinated employees
+  5. View vaccination employees by vaccine name
+  6. View vaccinated employees by Dose-1 date
+  7. View vaccinated employees by Dose-2 date
+  8. Back 
+
+  Enter: 
+
+EMPLOYEE_PROMPT : |
+  Please select an option :
+  1. View vaccination status
+  2. Update vaccination details
+  3. Update personal details
+  4. Logout
+  5. Exit
+  
+  Enter your choice: 
+
+UPDATE_VACC_STATUS : |
+  Please select your status: 
+
+  1 : Vaccinated with Dose-1
+  2 : Fully Vaccinated
+  3 : Back
+
+  Enter your choice:
+
+UPDATE_DETAILS_PROMPT1 : |
+  Please select an option:
+
+  1. Update your name
+  2. Update your gender
+  3. Back
+
+UPDATE_DETAILS_PROMPT2 : |
+  Please select an option:
+
+  1 .Update your name
+  2. Update your gender
+  3. Update Dose-1 details 
+  4. Update Dose-2 details 
+  5. Back
+  6. Exit
+
+LOGIN_PROMPT : |
+  **********WELCOME TO COVID VACCINE TRACKER**********
+  
+  Please select an option: 
+
+  1.Login
+  2.Exit
+  
+  Enter: 
+
+ENTER_GENDER : "Enter your gender: Male or Female\n"
+
+ASK_APPROVAL : "Do you want to update these details?  1. Yes  2. No \n"
+
+ASSIGN_USERNAME : "Enter username: "
+
+ASSIGN_DEFAULT_PWD : "Enter default password: "
+
+GET_USERNAME : "Enter your username: "
+
+NEW_PWD :  "Enter your new password: "
+
+CONFIRM_NEW_PWD : "Confirm your entered new password: "
+
+GET_VACCINE : "Enter vaccine name OR 'e' to EXIT:  "
+
+VALID_CHOICE : "Enter valid choice!"
+
+ASK_APPROVAL_ID : "Enter approval id of data you want to approve: "
+
+GET_DATE : "Enter a date (in DD/MM/YYYY): "
+
+VALID_VACCINE : "Please enter correct vaccine name OR '1' to Exit: \n"
+
+GET_NAME : "Enter your name: "
+
+GET_DOSE_CID : "Enter CID for Dose : "
+
+GET_DOSE2_CID : "Enter Dose-2 CID: "
+
+EMPTY_NAME_ERROR : "Cannot input empty name!"
+
+NAME_ALREADY_EXISTS : "Vaccine name already exists!\n"
+
+NOT_ALPHABETIC_NAME : "Vaccine name must be alphabetic only!\n"
+
+ENTER_IN_VALID_DOSE_ID_FORMAT : "Enter Valid Dose ID!\n"
+
+ENTER_DOSE_1_DATE : "Enter Dose 1 Date: \n"
+
+ENTER_DOSE_2_DATE : "Enter Dose 2 Date: \n"
+
+ENTER_DOSE_1_CID : "Enter Dose 1 CID: \n"
+
+ENTER_DOSE_2_CID : "Enter Dose 2 CID: \n"
+
+ENTER_VACCINE_ID : "Enter Vaccine ID: "
+
+ASK_FOR_DOSE_2_DETAILS : "Do you want to update Dose 2 Details?  1. Yes  2. No \n"
+
+#authentication file
+ATTEMPTS_MESSAGE : Enter your login credentials. You have 3 total attempts
+ATTEMPTS_EXHAUSTED : Login attempts exhausted
+EXIT_SYSTEM_PROMPT : 'Do you want to exit from system (y/n) :'
+ENTER_USERNAME : "Enter your username: "
+ENTER_NAME : "Enter your name: "
+ENTER_PWD : "Enter your password: "
+INVALID_LOGIN : 'Invalid login detected...Attempts left: {}'
