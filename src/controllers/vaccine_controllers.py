@@ -9,7 +9,7 @@ class VaccineControllers:
     '''
 
     def create_vaccine(self, vaccine_name) -> bool:
-        """ This method is used to"""
+        """ This method is used to add new vaccine"""
         data = db.fetch_data(DbConfig.FETCH_VACCINE_DETAILS, (vaccine_name,))
         if data:
             return False
