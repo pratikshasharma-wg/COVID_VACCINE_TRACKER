@@ -15,8 +15,11 @@ def test_username_already_exists_error():
         UsernameAlreadyExistsError, match="Username already exists: test_user"
     ):
         raise UsernameAlreadyExistsError("Username already exists: test_user")
-    assert UsernameAlreadyExistsError("Username already exists: test_user").msg == "Username already exists: test_user"
-    
+    assert (
+        UsernameAlreadyExistsError("Username already exists: test_user").msg
+        == "Username already exists: test_user"
+    )
+
 
 def test_username_already_exists_error_msg():
     error_msg = "error msg"

@@ -8,3 +8,14 @@ ADMIN_MSG : Welcome Admin....
 
 EMPLOYEE_MSG : Welcome Employee....
 
+CONNECTION_CLOSED_EXIT_APP : "Connection closed. Exiting from application"
+
+ERROR_OCCURRED : "Error Occured in application: {}"
+
+VACCINE_ADDED_SUCCESSFULLY : 'Vaccine Added Successfully'
+
+PROFILE_UPDATED : "Profile Updated!"
+
+NEW_USER_ADDED : "New User Added!"
+
+FIRST_TIME_LOGIN : "User logged in first time"

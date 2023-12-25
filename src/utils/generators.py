@@ -15,4 +15,3 @@ def list_generator(lst):
             yield data
             data = []
             counter = 0
-

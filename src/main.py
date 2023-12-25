@@ -1,17 +1,20 @@
 import logging
 
 from config.logs.logs import Logs
+from config.prints.prints import Prints
 from views.auth import AuthViews
 from utils.decorators import load_config
 from database.database_operations import db
 
 
-logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
-                    level = logging.DEBUG,
-                    filename = 'src\\config\\logs\\logs.txt')
+logging.basicConfig(
+    format="%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s",
+    level=logging.DEBUG,
+    filename="src\\config\\logs\\logs.txt",
+)
 
 
-logger = logging.getLogger('main')
+logger = logging.getLogger("main")
 
 
 @load_config
@@ -22,13 +25,12 @@ def main():
 
 
 if __name__ == "__main__":
-    
     try:
         main()
     except Exception as e:
-        logger.error('Error Occured in application: {}'.format(e))
+        logger.error(Logs.ERROR_OCCURRED.format(e))
     finally:
-        #close database connection
+        # close database connection
         db.connection.close()
-        print("Exiting from Application")
-        logger.info("Connection closed. Exiting from application")
+        print(Prints.EXITING_APPLICATION)
+        logger.info(Logs.CONNECTION_CLOSED_EXIT_APP)

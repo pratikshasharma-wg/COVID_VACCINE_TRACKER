@@ -113,3 +113,14 @@ FETCH_VACCINE : 'SELECT * FROM vaccine'
 FETCH_DOSE_DETAILS_BY_DOSE_CID : 'SELECT * FROM dose_details WHERE dose_cid = ? '
 
 FETCH_DOSE_DETAILS_BY_DOSE2CID : 'SELECT * FROM dose_details WHERE dose_cid = ? and dose_num = 2'
+
+FETCH_DOSE_0_EMPLOYEES : """SELECT user_details.user_id, user_details.email
+  FROM user_details
+  LEFT JOIN dose_details ON user_details.user_id = dose_details.user_id
+  WHERE dose_details.user_id IS NULL"""
+
+FETCH_DOSE_1_EMPLOYEES : """SELECT u.user_id, u.email, d.vaccine_name FROM user_details as u JOIN dose_details as d ON u.user_id
+  = d.user_id WHERE d.dose_num = 1
+  """
+
+FETCH_DOSE_2_EMPLOYEES : 

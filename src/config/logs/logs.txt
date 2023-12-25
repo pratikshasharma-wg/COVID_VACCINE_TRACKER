@@ -238,3 +238,18 @@
 2023-12-18 02:19:10,598 INFO     [main.py:19] Welcome To COVID Vaccine Tracker
 2023-12-18 02:19:27,254 INFO     [admin.py:27] Welcome Admin....
 2023-12-18 02:20:04,832 INFO     [main.py:34] Connection closed. Exiting from application
+2023-12-18 10:38:19,893 INFO     [main.py:21] Welcome To COVID Vaccine Tracker
+2023-12-18 10:39:15,914 INFO     [admin.py:32] Welcome Admin....
+2023-12-18 10:40:01,092 INFO     [employee.py:24] Logs.EMPLOYEE_MSG
+2023-12-18 10:40:16,879 INFO     [admin.py:32] Welcome Admin....
+2023-12-18 10:40:50,030 INFO     [admin.py:78] New User Added!
+2023-12-18 10:40:59,739 INFO     [auth_controllers.py:56] User logged in first time
+2023-12-18 10:41:05,355 INFO     [auth_controllers.py:86] Default Password changed for employee username : 
+2023-12-18 10:41:05,356 INFO     [employee.py:24] Logs.EMPLOYEE_MSG
+2023-12-18 10:41:10,954 INFO     [employee.py:90] Profile Updated!
+2023-12-18 10:41:10,954 INFO     [employee.py:24] Logs.EMPLOYEE_MSG
+2023-12-18 10:41:57,786 ERROR    [main.py:30] Error Occured in application: invalid literal for int() with base 10: 'a'
+2023-12-18 10:41:57,786 INFO     [main.py:35] Connection closed. Exiting from application
+2023-12-18 10:43:23,762 INFO     [main.py:21] Welcome To COVID Vaccine Tracker
+2023-12-18 10:43:31,125 INFO     [employee.py:24] Logs.EMPLOYEE_MSG
+2023-12-18 10:50:04,095 INFO     [main.py:35] Connection closed. Exiting from application

@@ -14,5 +14,5 @@ def load_config(func):
         Prints.load()
         Logs.load()
         func()
-    return function
 
+    return function

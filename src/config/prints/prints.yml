@@ -94,6 +94,10 @@ ENTER_VALID_VACCINE_ID : "Please Enter valid Vaccine ID!"
 
 NO_APPROVED_DATA: "Currently, No Approved Data!"
 
+EXITING_APPLICATION : "Exiting from Application"
+
+NO_USER_EXISTS : "No user exists!"
+
 
 # NEWLINE : \n
 
