@@ -12,6 +12,7 @@ pyyaml = "*"
 pytest-mock = "*"
 pytest-timeout = "*"
 shortuuid = "*"
+"mysql.connector" = "*"
 
 [dev-packages]
 

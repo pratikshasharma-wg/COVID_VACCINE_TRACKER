@@ -253,3 +253,16 @@
 2023-12-18 10:43:23,762 INFO     [main.py:21] Welcome To COVID Vaccine Tracker
 2023-12-18 10:43:31,125 INFO     [employee.py:24] Logs.EMPLOYEE_MSG
 2023-12-18 10:50:04,095 INFO     [main.py:35] Connection closed. Exiting from application
+2024-01-19 16:17:34,574 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3024
+2024-01-19 16:17:34,574 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-01-19 16:17:34,574 INFO     [_internal.py:96]  * Restarting with stat
+2024-01-19 16:17:35,368 WARNING  [_internal.py:96]  * Debugger is active!
+2024-01-19 16:17:35,368 INFO     [_internal.py:96]  * Debugger PIN: 642-890-053
+2024-01-19 16:17:57,377 INFO     [_internal.py:96] 127.0.0.1 - - [19/Jan/2024 16:17:57] "[33mPOST /login HTTP/1.1[0m" 404 -
+2024-01-29 12:14:26,158 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3024
+2024-01-29 12:14:26,174 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-01-29 12:14:26,177 INFO     [_internal.py:96]  * Restarting with stat
+2024-01-29 12:14:27,065 WARNING  [_internal.py:96]  * Debugger is active!
+2024-01-29 12:14:27,067 INFO     [_internal.py:96]  * Debugger PIN: 642-890-053

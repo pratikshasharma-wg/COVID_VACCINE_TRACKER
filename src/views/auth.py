@@ -4,11 +4,12 @@ import hashlib
 import maskpass
 from os import system
 
-from config.prints.prints import Prints
-from controllers.auth_controllers import AuthControllers
-from config.prompts.prompts import PromptsConfig
 from views.admin import AdminViews
+from config.prints.prints import Prints
 from views.employee import EmployeeViews
+from config.prompts.prompts import PromptsConfig
+from controllers.auth_controllers import AuthControllers
+from utils.input_validators import input_valid_password
 
 
 logger = logging.getLogger("auth_view")
@@ -70,6 +71,24 @@ class AuthViews:
             self.role_of_user(user_info)
             return
 
+    def change_default_pwd(self, email: str, new_password: str, confirm_password: str) -> bool:
+        """
+        This method is used to change default password on first time login.
+        """
+
+        while True:
+            new_password = input_valid_password(PromptsConfig.NEW_PWD)
+            confirm_password = input_valid_password(PromptsConfig.CONFIRM_NEW_PWD)
+
+            if new_password != confirm_password:
+                print(Prints.CONFIRM_PWD_NOT_MATCHED)
+                continue
+            else:
+                hashed_password = hashlib.sha256(new_password.encode()).hexdigest()
+                break
+
+        logger.info("Default Password changed for employee username : ".format(email))
+        return True
 
     def role_of_user(self, user_info: tuple) -> bool:
         """
@@ -83,6 +102,7 @@ class AuthViews:
             admin_obj = AdminViews(user_info[0][0])
             admin_obj.admin_menu()
             return True
+        
         elif role == "Employee":
             employee_obj = EmployeeViews(user_info[0][0])
             employee_obj.emp_menu()

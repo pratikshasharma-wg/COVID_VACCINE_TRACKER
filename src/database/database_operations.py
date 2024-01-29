@@ -1,4 +1,4 @@
-import sqlite3
+import mysql.connector
 from typing import Union
 
 from config.queries.db_queries import DbConfig
@@ -18,15 +18,21 @@ class DBOperations:
 
     def __init__(self) -> None:
         """
-        This method creates sqlite connection and cursor
+        This method creates sql connection and cursor
         Parameters = self
         Return Type = None
         """
         try:
-            self.connection = sqlite3.connect("src/database/vaccine_tracker.db")
-            self.cursor = self.connection.cursor()
-        except sqlite3.Error:
+            self.connection = mysql.connector.connect(user='root',
+                password='Pratiksha15@Skit',
+                host='127.0.0.1',
+                database='covid_vaccine_tracker'
+            )
+            self.cursor = self.connection.cursor(dictionary=True)
+            
+        except mysql.connector.Error:
             print("Connection to DB cannot be made. Please try again!")
+        
 
     def create_tables(self) -> None:
         """
@@ -44,6 +50,7 @@ class DBOperations:
         # self.cursor.execute('INSERT INTO auth VALUES (?,?,?,?,?)', (1111, "pratiksha15@gmail.com", hash, "Admin", "True",))
         self.connection.commit()
 
+
     def save_data(self, query: Union[str, list], data: Union[tuple, list]) -> None:
         """
         This method saves data in the database
@@ -54,6 +61,7 @@ class DBOperations:
             for i in range(0, len(query)):
                 self.cursor.execute(query[i], data[i])
         self.connection.commit()
+
 
     def fetch_data(self, query: str, tup: tuple = None) -> list:
         """

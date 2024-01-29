@@ -1,17 +1,17 @@
 CREATE_AUTH_TABLE : |
   CREATE TABLE IF NOT EXISTS auth(
   user_id INTEGER PRIMARY KEY,
-  email TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL,
-  role TEXT DEFAULT "Employee",
-  is_def_pwd_changed TEXT DEFAULT 'False')
+  email varchar(25) UNIQUE NOT NULL,
+  password varchar(25) NOT NULL,
+  role varchar(25) DEFAULT "Employee",
+  is_def_pwd_changed varchar(25) DEFAULT 'False')
 
 CREATE_USER_DETAILS_TABLE : |
   CREATE TABLE IF NOT EXISTS user_details(
   user_id INTEGER PRIMARY KEY,
-  name TEXT,
-  email TEXT UNIQUE,
-  gender TEXT,
+  name varchar(25),
+  email varchar(25) UNIQUE,
+  gender varchar(25),
   FOREIGN KEY(user_id) REFERENCES auth(user_id)
   )
 
@@ -19,10 +19,10 @@ CREATE_DOSE_DETAILS_TABLE : |
   CREATE TABLE IF NOT EXISTS dose_details(
   s_no INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id INTEGER,
-  vaccine_name TEXT NOT NULL,
+  vaccine_name varchar(25) NOT NULL,
   dose_num INTEGER NOT NULL,
-  dose_date TEXT NOT NULL,
-  dose_cid TEXT UNIQUE NOT NULL,
+  dose_date varchar(25) NOT NULL,
+  dose_cid varchar(25) UNIQUE NOT NULL,
   FOREIGN KEY(user_id) REFERENCES user_details(user_id)
   )
 
@@ -31,88 +31,95 @@ CREATE_ADMIN_APPROVAL_TABLE : |
   approval_id INTEGER PRIMARY KEY AUTOINCREMENT,
   user_id INTEGER NOT NULL,
   dose_num INTEGER NOT NULL,
-  dose_cid TEXT NOT NULL,
-  dose_is_approved TEXT DEFAULT "No",
+  dose_cid varchar(25) NOT NULL,
+  dose_is_approved varchar(25) DEFAULT "No",
   FOREIGN KEY(user_id) REFERENCES user_details(user_id)
   )
 
 CREATE_VACCINE_TABLE : |
   CREATE TABLE IF NOT EXISTS vaccine(
   vaccine_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  vaccine_name TEXT NOT NULL
+  vaccine_name varchar(25) NOT NULL
   )
 
-USER_DATA : 'SELECT * FROM auth WHERE email = ?'
+USER_DATA : 'SELECT * FROM auth WHERE email = %s'
 
-UPDATE_PWD : 'UPDATE auth SET password = ?, is_def_pwd_changed = "True" WHERE email = ?'
+UPDATE_PWD : 'UPDATE auth SET password = %s, is_def_pwd_changed = "True" WHERE email = %s'
 
-ADD_USER : 'INSERT INTO auth VALUES (?,?,?,"Employee","False")'
+ADD_USER : 'INSERT INTO auth VALUES (%s,%s,%s,"Employee","False")'
 
-FETCH_BY_DOSE : 'SELECT user_id, email, vaccination_status FROM user_details WHERE vaccination_status = ?'
+FETCH_BY_DOSE : 'SELECT user_id, email, vaccination_status FROM user_details WHERE vaccination_status = %s'
 
 FETCH_BY_VACCINE : |
   SELECT u.user_id, u.email, d.vaccine_name
   FROM user_details AS u JOIN dose_details AS d
   ON u.user_id = d.user_id 
-  WHERE d.vaccine_name = ?
+  WHERE d.vaccine_name = %s
+
 
 FETCH_BY_DOSE1_DATE : |
   SELECT u.user_id, u.email, d.vaccine_name, d.dose_date, d.dose_cid
   FROM user_details AS u JOIN dose_details AS d
-  ON u.user_id = d.user_id WHERE (d.dose_date = ? and d.dose_num = 1)
+  ON u.user_id = d.user_id WHERE (d.dose_date = %s
+ and d.dose_num = 1)
 
 FETCH_BY_DOSE2_DATE : |
   SELECT u.user_id, u.email, d.vaccine_name, d.dose_date, d.dose_cid 
   FROM user_details AS u JOIN dose_details AS d
-  ON u.user_id = d.user_id WHERE (d.dose_date = ? and d.dose_num = 2)
+  ON u.user_id = d.user_id WHERE (d.dose_date = %s
+ and d.dose_num = 2)
 
-ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (?)'
+ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (%s)'
 
-APPROVE_DOSE_INFO : 'UPDATE admin_approval SET dose_is_approved = "Yes" WHERE approval_id = ?'
+FETCH_USER : 'SELECT * FROM dose_details WHERE user_id = %s'
 
-FETCH_1APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 1'
+APPROVE_DOSE_INFO : 'UPDATE admin_approval SET dose_is_approved = "Yes" WHERE approval_id = %s'
+
+FETCH_APPROVAL_DATA_ALL : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
+
+FETCH_APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = %s'
 
 FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
 
-FETCH_VACC_STATUS : 'SELECT count(user_id) FROM dose_details WHERE user_id = ?'
+FETCH_VACC_STATUS : 'SELECT count(user_id) FROM dose_details WHERE user_id = %s'
 
-FETCH_DOSE_1_DETAILS : 'SELECT * FROM dose_details WHERE user_id = ? and dose_num = 1'
+FETCH_DOSE_1_DETAILS : 'SELECT * FROM dose_details WHERE user_id = %s and dose_num = 1'
 
-FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = ?'
+FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = %s'
 
-ADD_DOSE_DETAILS : 'INSERT INTO dose_details (user_id, vaccine_name, dose_num, dose_date,dose_cid) VALUES (?,?,?,?,?)'
+ADD_DOSE_DETAILS : 'INSERT INTO dose_details (user_id, vaccine_name, dose_num, dose_date,dose_cid) VALUES (%s,%s,%s,%s,%s)'
 
-ADD_TO_ADMIN_APPROVAL : 'INSERT INTO admin_approval (user_id, dose_num, dose_cid) values (?, ?, ?)'
+ADD_TO_ADMIN_APPROVAL : 'INSERT INTO admin_approval (user_id, dose_num, dose_cid) values (%s, %s, %s)'
 
-UPDATE_ADMIN_APPROVAL : 'UPDATE admin_approval SET dose_1_cid = ? WHERE user_id = ?'
+UPDATE_ADMIN_APPROVAL : 'UPDATE admin_approval SET dose_1_cid = %s WHERE user_id = %s'
 
-UPDATE_DOSE2_DETAILS : 'UPDATE dose_details SET dose_2_date = ?, dose_2_cid = ? WHERE user_id = ?'
+UPDATE_DOSE2_DETAILS : 'UPDATE dose_details SET dose_2_date = %s, dose_2_cid = %s WHERE user_id = %s'
 
-UPDATE_ADMIN_APPROVAL2 : 'UPDATE admin_approval SET dose_2_cid = ? WHERE user_id = ?'
+UPDATE_ADMIN_APPROVAL2 : 'UPDATE admin_approval SET dose_2_cid = %s WHERE user_id = %s'
 
-SELECT_DOSE1_DATE : 'SELECT dose_1_date FROM dose_details WHERE user_id = ?'
+SELECT_DOSE1_DATE : 'SELECT dose_1_date FROM dose_details WHERE user_id = %s'
 
-UPDATE_NAME : 'UPDATE user_details SET name = ? WHERE user_id = ?'
+UPDATE_NAME : 'UPDATE user_details SET name = %s WHERE user_id = %s'
 
-UPDATE_GENDER : 'UPDATE user_details SET gender = ? WHERE user_id = ?'
+UPDATE_GENDER : 'UPDATE user_details SET gender = %s WHERE user_id = %s'
 
 APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Yes"'
 
-ADD_USER_DETAILS : 'INSERT INTO user_details (user_id, email) values (?,?)'
+ADD_USER_DETAILS : 'INSERT INTO user_details (user_id, email) values (%s,%s)'
 
-FETCH_AUTH_DATA : 'SELECT * FROM auth WHERE email = ?'
+FETCH_AUTH_DATA : 'SELECT * FROM auth WHERE email = %s'
 
 FETCH_VACCINE_NAME :  'SELECT vaccine_name FROM vaccine'
 
 FETCH_USER_DETAILS : 'SELECT user_id, email FROM user_details'
 
-IS_DOSE_ID_ALREADY_PRESENT : 'SELECT * FROM dose_details WHERE dose_cid = ?'
+IS_DOSE_ID_ALREADY_PRESENT : 'SELECT * FROM dose_details WHERE dose_cid = %s'
 
 FETCH_VACCINE : 'SELECT * FROM vaccine'
 
-FETCH_DOSE_DETAILS_BY_DOSE_CID : 'SELECT * FROM dose_details WHERE dose_cid = ? '
+FETCH_DOSE_DETAILS_BY_DOSE_CID : 'SELECT * FROM dose_details WHERE dose_cid = %s '
 
-FETCH_DOSE_DETAILS_BY_DOSE2CID : 'SELECT * FROM dose_details WHERE dose_cid = ? and dose_num = 2'
+FETCH_DOSE_DETAILS_BY_DOSE2CID : 'SELECT * FROM dose_details WHERE dose_cid = %s and dose_num = 2'
 
 FETCH_DOSE_0_EMPLOYEES : """SELECT user_details.user_id, user_details.email
   FROM user_details
@@ -123,4 +130,4 @@ FETCH_DOSE_1_EMPLOYEES : """SELECT u.user_id, u.email, d.vaccine_name FROM user_
   = d.user_id WHERE d.dose_num = 1
   """
 
-FETCH_DOSE_2_EMPLOYEES : 
+# FETCH_DOSE_2_EMPLOYEES : 
