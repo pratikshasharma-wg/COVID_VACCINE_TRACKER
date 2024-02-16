@@ -65,6 +65,7 @@ class Prints:
     NO_APPROVED_DATA = None
     EXITING_APPLICATION = None
     NO_USER_EXISTS = None
+    MSG = None
 
     @classmethod
     def load(cls):
@@ -118,3 +119,5 @@ class Prints:
             cls.ENTER_VALID_VACCINE_ID = data["ENTER_VALID_VACCINE_ID"]
             cls.EXITING_APPLICATION = data["EXITING_APPLICATION"]
             cls.NO_USER_EXISTS = data["NO_USER_EXISTS"]
+            cls.MSG = data["MSG"]
+            

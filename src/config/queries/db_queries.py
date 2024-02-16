@@ -18,7 +18,7 @@ class DbConfig:
     FETCH_BY_DOSE2_DATE = None
     ADD_VACCINE = None
     APPROVE_DOSE_INFO = None
-    FETCH_1APPROVAL_DATA = None
+    FETCH_APPROVAL_DATA = None
     FETCH_2APPROVAL_DATA = None
     FETCH_VACC_STATUS = None
     FETCH_DOSE_1_DETAILS = None
@@ -36,13 +36,17 @@ class DbConfig:
     FETCH_AUTH_DATA = None
     FETCH_VACCINE_NAME = None
     FETCH_USER_DETAILS = None
+    FETCH_USERS_BY_DATE = None
     IS_DOSE_ID_ALREADY_PRESENT = None
     FETCH_VACCINE = None
     FETCH_DOSE_DETAILS_BY_DOSE_CID = None
     FETCH_DOSE_DETAILS_BY_DOSE2CID = None
     FETCH_DOSE_0_EMPLOYEES = None
     FETCH_DOSE_1_EMPLOYEES = None
-    FETCH_DOSE_2_EMPLOYEES = None
+    FETCH_USER = None
+    FETCH_APPROVAL_DATA_ALL = None
+    FETCH_SPECIFIC_VACCINE = None
+    FETCH_PROFILE = None
 
     @classmethod
     def load(cls):
@@ -62,7 +66,7 @@ class DbConfig:
             cls.FETCH_BY_DOSE2_DATE = data["FETCH_BY_DOSE2_DATE"]
             cls.ADD_VACCINE = data["ADD_VACCINE"]
             cls.APPROVE_DOSE_INFO = data["APPROVE_DOSE_INFO"]
-            cls.FETCH_1APPROVAL_DATA = data["FETCH_1APPROVAL_DATA"]
+            cls.FETCH_APPROVAL_DATA = data["FETCH_APPROVAL_DATA"]
             cls.FETCH_2APPROVAL_DATA = data["FETCH_2APPROVAL_DATA"]
             cls.FETCH_VACC_STATUS = data["FETCH_VACC_STATUS"]
             cls.FETCH_DOSE_1_DETAILS = data["FETCH_DOSE_1_DETAILS"]
@@ -86,4 +90,11 @@ class DbConfig:
             cls.FETCH_DOSE_DETAILS_BY_DOSE2CID = data["FETCH_DOSE_DETAILS_BY_DOSE2CID"]
             cls.FETCH_DOSE_0_EMPLOYEES = data['FETCH_DOSE_0_EMPLOYEES']
             cls.FETCH_DOSE_1_EMPLOYEES = data['FETCH_DOSE_1_EMPLOYEES']
-            cls.FETCH_DOSE_2_EMPLOYEES = data['FETCH_DOSE_2_EMPLOYEES']
+            # cls.FETCH_DOSE_2_EMPLOYEES = data['FETCH_DOSE_2_EMPLOYEES']
+            cls.FETCH_USER = data['FETCH_USER']
+            cls.FETCH_APPROVAL_DATA_ALL = data['FETCH_APPROVAL_DATA_ALL']
+            cls.FETCH_SPECIFIC_VACCINE = data['FETCH_SPECIFIC_VACCINE']
+            cls.FETCH_USERS_BY_DATE = data['FETCH_USERS_BY_DATE']
+            cls.FETCH_PROFILE = data['FETCH_PROFILE']
+
+DbConfig.load()

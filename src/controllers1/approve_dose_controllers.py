@@ -1,11 +1,15 @@
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
+from handlers.approve_dose_handler import ApproveDoseHandler
 
 
 class ApproveDoseControllers:
     '''
         Class that contains methods to perform opertions related to approval of vaccination details.
     '''
+
+    def __init__(self) -> None:
+        self.approve_dose_handler = ApproveDoseHandler()
 
 
     def show_info_to_approve(self, query) -> bool:
@@ -14,7 +18,6 @@ class ApproveDoseControllers:
         """
 
         data = db.fetch_data(query)
-        
         return data
 
 

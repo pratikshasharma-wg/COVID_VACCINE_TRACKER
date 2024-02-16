@@ -12,6 +12,15 @@ pyyaml = "*"
 pytest-mock = "*"
 pytest-timeout = "*"
 shortuuid = "*"
+"mysql.connector" = "*"
+flask = "*"
+flask-jwt-extended = "*"
+flask-smorest = "*"
+flask-sqlalchemy = "*"
+passlib = "*"
+marshmallow = "*"
+python-dotenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 
