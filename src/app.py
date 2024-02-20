@@ -22,10 +22,8 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d
 
 logger = logging.getLogger('app')
 
+def create_app():
 
-if __name__ == "__app__":  
-
-    db.create_tables()
     app = Flask(__name__)
     app.config["API_TITLE"] = "COVID Vaccine Tracker"
     app.config["API_VERSION"] = "v1"
@@ -38,9 +36,10 @@ if __name__ == "__app__":
 
     app.register_error_handler(Exception, lambda: ({"error": "something happened in server"}, 500))
     app.config["JWT_SECRET_KEY"] = "pratiksha"
+    db.create_tables()
 
     api = Api(app)
- 
+
     jwt = JWTManager(app)
 
     @app.before_request
@@ -55,5 +54,6 @@ if __name__ == "__app__":
     api.register_blueprint(profile_blp)
     api.register_blueprint(get_blp)
     api.register_blueprint(approve_blp)
-
-    # app.run(debug=True, port=3024)
+    return app
+    
+flask_app = create_app()
