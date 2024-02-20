@@ -54,4 +54,4 @@ if __name__ == "__main__":
     api.register_blueprint(get_blp)
     api.register_blueprint(approve_blp)
 
-    app.run(debug=True, port=3024)
+    # app.run(debug=True, port=3024)
