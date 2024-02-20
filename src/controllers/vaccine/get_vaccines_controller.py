@@ -1,3 +1,4 @@
+from flask import g
 from flask_smorest import abort
 
 from handlers.vaccine_handler import VaccineHandler
@@ -21,4 +22,4 @@ class GetVaccineController:
             }, 200
         
         except CustomException as e:
-            return abort(e.code, message=e.message)
+            return e.dump(), e.code

@@ -1,3 +1,4 @@
+from flask import g
 from datetime import date
 
 from config.queries.db_queries import DbConfig

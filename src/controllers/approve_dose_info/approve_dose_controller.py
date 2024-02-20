@@ -1,3 +1,5 @@
+from flask import g
+
 from utils.exceptions import CustomException
 from handlers.approve_dose_handler import ApproveDoseHandler
 

@@ -1,5 +1,5 @@
 import logging
-from flask import abort
+from flask import g
 from flask_jwt_extended import create_access_token
 
 from utils.exceptions import CustomException

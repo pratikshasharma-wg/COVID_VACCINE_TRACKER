@@ -1,3 +1,4 @@
+from flask import g
 from flask_jwt_extended import get_jwt_identity
 
 from utils.exceptions import CustomException

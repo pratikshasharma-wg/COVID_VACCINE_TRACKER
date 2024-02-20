@@ -1,3 +1,5 @@
+from flask import g
+
 from config.prints.prints import Prints
 from handlers.vaccine_handler import VaccineHandler
 from utils.exceptions import CustomException
@@ -16,6 +18,7 @@ class AddVaccineController:
         """ This method is used to add new vaccine"""
 
         try:
+            
             self.vaccine_handler.create_vaccine(vaccine_info["vaccine_name"])
             return {
                 Prints.MSG : f"Vaccine with name: {vaccine_info['vaccine_name']} added successfully!!!"

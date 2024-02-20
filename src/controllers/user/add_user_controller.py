@@ -1,3 +1,5 @@
+from flask import g
+
 from handlers.user_handler import UserHandler
 from utils.exceptions import CustomException
 
