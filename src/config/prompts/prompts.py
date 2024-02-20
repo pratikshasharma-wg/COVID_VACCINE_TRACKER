@@ -70,7 +70,7 @@ class PromptsConfig:
         Parameters = cls
         Return Type = None
         """
-        with open("src/config/prompts/prompts.yml", "r") as file:
+        with open(FPATH, "r") as file:
             data = yaml.safe_load(file)
 
             cls.ATTEMPTS_MESSAGE = data["ATTEMPTS_MESSAGE"]

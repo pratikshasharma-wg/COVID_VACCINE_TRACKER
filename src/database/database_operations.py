@@ -50,9 +50,9 @@ class DBOperations:
         self.cursor.execute(DbConfig.CREATE_DOSE_DETAILS_TABLE)
         self.cursor.execute(DbConfig.CREATE_ADMIN_APPROVAL_TABLE)
         self.cursor.execute(DbConfig.CREATE_VACCINE_TABLE)
-        pw = "Pratiksha15@"
-        hash = hashlib.sha256(pw.encode()).hexdigest()
-        self.cursor.execute('INSERT INTO auth VALUES (%s,%s,%s,%s,%s)', (1111, "pratiksha15@gmail.com", hash, "Admin", 'True',))
+        # pw = "Pratiksha15@"
+        # hash = hashlib.sha256(pw.encode()).hexdigest()
+        # self.cursor.execute('INSERT INTO auth VALUES (%s,%s,%s,%s,%s)', (1111, "pratiksha15@gmail.com", hash, "Admin", 'True',))
 
 
     def save_data(self, query: str, data: tuple) -> None:
