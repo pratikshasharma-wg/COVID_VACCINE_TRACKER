@@ -27,7 +27,7 @@ class GetApprovedInfoController:
             logger.info(f"[{g.request_id}] fetched the list of unapproved data")
             
             return {
-                "unapproved data": list
+                "unapproved_data": list
             }, 200
 
         except CustomException as e:
