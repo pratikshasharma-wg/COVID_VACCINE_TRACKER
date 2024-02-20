@@ -56,4 +56,4 @@ def create_app():
     api.register_blueprint(approve_blp)
     return app
     
-flask_app = create_app()
+app = create_app()
