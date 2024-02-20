@@ -109,7 +109,7 @@ FETCH_APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Ye
 
 ADD_USER_DETAILS : "INSERT INTO user_details (user_id, email) values (%s,%s)"
 
-FETCH_AUTH_DATA : 'SELECT * FROM auth WHERE email = %s'
+FETCH_AUTH_DATA : "SELECT * FROM auth WHERE email = %s"
 
 FETCH_VACCINE_NAME :  'SELECT vaccine_name FROM vaccine'
 

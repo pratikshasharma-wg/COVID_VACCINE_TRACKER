@@ -16,14 +16,16 @@ class VaccineHandler:
 
 
     def get_vaccines(self):
-        
+        """Retrieves the list of vaccines from database"""
+
         data = db.fetch_data(DbConfig.FETCH_VACCINE)
-        
+        print("hello")
         return data
         
 
     def is_vaccine_present(self, vaccine_id):
-        
+        """Checks if vaccine present in database"""
+
         data = db.fetch_data(
             DbConfig.FETCH_SPECIFIC_VACCINE, (vaccine_id,)
         )

@@ -22,7 +22,7 @@ class AddVaccineController:
         """ This method is used to add new vaccine"""
 
         try:
-            logger.info(f"[{g.request_id}] created new vaccine named {vaccine_info["vaccine_name"]}")
+            logger.info(f"[{g.request_id}] created new vaccine named {vaccine_info['vaccine_name']}")
             self.vaccine_handler.create_vaccine(vaccine_info["vaccine_name"])
             return {
                 Prints.MSG : f"Vaccine with name: {vaccine_info['vaccine_name']} added successfully!!!"
