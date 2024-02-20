@@ -29,7 +29,7 @@ class UpdateDoseController:
                 update_dose_info["dose_date"],
                 update_dose_info["dose_cid"]
             )
-            logger.infp(f"[{g.request_id}] updated dose details")
+            logger.info(f"[{g.request_id}] updated dose details")
 
             return {
                 "message": "Dose details updated successfully!"

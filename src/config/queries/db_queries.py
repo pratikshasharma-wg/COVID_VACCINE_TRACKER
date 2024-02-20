@@ -45,7 +45,7 @@ class DbConfig:
     FETCH_DOSE_0_EMPLOYEES = None
     FETCH_DOSE_1_EMPLOYEES = None
     FETCH_USER = None
-    FETCH_APPROVAL_DATA_ALL = None
+    # FETCH_APPROVAL_DATA_ALL = None
     FETCH_SPECIFIC_VACCINE = None
     FETCH_PROFILE = None
     FETCH_USER_DOSE_2 = None
@@ -94,7 +94,7 @@ class DbConfig:
             cls.FETCH_DOSE_1_EMPLOYEES = data['FETCH_DOSE_1_EMPLOYEES']
             # cls.FETCH_DOSE_2_EMPLOYEES = data['FETCH_DOSE_2_EMPLOYEES']
             cls.FETCH_USER = data['FETCH_USER']
-            cls.FETCH_APPROVAL_DATA_ALL = data['FETCH_APPROVAL_DATA_ALL']
+            # cls.FETCH_APPROVAL_DATA_ALL = data['FETCH_APPROVAL_DATA_ALL']
             cls.FETCH_SPECIFIC_VACCINE = data['FETCH_SPECIFIC_VACCINE']
             cls.FETCH_USERS_BY_DATE = data['FETCH_USERS_BY_DATE']
             cls.FETCH_PROFILE = data['FETCH_PROFILE']

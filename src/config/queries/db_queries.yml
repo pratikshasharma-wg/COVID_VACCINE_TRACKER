@@ -73,11 +73,9 @@ ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (%s)'
 
 FETCH_USER : "SELECT * FROM dose_details WHERE user_id = %s"
 
-FETCH_USER_DOSE_2: 'Select * from dose_details WHERE user_id = %s and dose_num = %s'
+FETCH_USER_DOSE_2: "Select * from dose_details WHERE user_id = %s and dose_num = %s"
 
 APPROVE_DOSE_INFO : "UPDATE admin_approval SET dose_is_approved = 'Yes' WHERE approval_id = %s"
-
-FETCH_APPROVAL_DATA_ALL : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
 
 FETCH_APPROVAL_DATA : "SELECT * FROM admin_approval WHERE dose_is_approved = 'No' "
 
@@ -89,9 +87,9 @@ FETCH_DOSE_1_DETAILS : 'SELECT * FROM dose_details WHERE user_id = %s and dose_n
 
 FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = %s'
 
-ADD_DOSE_DETAILS : 'INSERT INTO dose_details (user_id, vaccine_name, dose_num, dose_date,dose_cid) VALUES (%s,%s,%s,%s,%s)'
+ADD_DOSE_DETAILS : "INSERT INTO dose_details (user_id, vaccine_name, dose_num, dose_date,dose_cid) VALUES (%s,%s,%s,%s,%s)"
 
-ADD_TO_ADMIN_APPROVAL : 'INSERT INTO admin_approval (user_id, dose_num, dose_cid) values (%s, %s, %s)'
+ADD_TO_ADMIN_APPROVAL : "INSERT INTO admin_approval (user_id, dose_num, dose_cid) values (%s, %s, %s)"
 
 UPDATE_ADMIN_APPROVAL : 'UPDATE admin_approval SET dose_1_cid = %s WHERE user_id = %s'
 
