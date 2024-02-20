@@ -1,8 +1,12 @@
+import logging
 from flask import g
 from flask_jwt_extended import get_jwt_identity
 
 from utils.exceptions import CustomException
 from handlers.user_handler import UserHandler
+
+
+logger = logging.getLogger(__name__)
 
 
 class ProfileController:
@@ -22,7 +26,7 @@ class ProfileController:
             user_profile_info["gender"],
             user_id
         )
-
+        logger.info(f"[{g.request_id}] profile updated successfully")
         return {
             "message": "Profile updated successfully!!!"
         }, 200
@@ -32,6 +36,7 @@ class ProfileController:
         """ This method is used to see the profile info. """
         user_id = get_jwt_identity()
         profile_data = self.user_handler.get_profile(user_id)
+        logger.info(f"[{g.request_id}] viewed the profile")
         return {
             "details": profile_data
         }, 200

@@ -1,8 +1,12 @@
+import logging
 from flask import g
 from flask_smorest import abort
 
 from handlers.vaccine_handler import VaccineHandler
 from utils.exceptions import CustomException
+
+
+logger = logging.getLogger(__name__)
 
 
 class GetVaccineController:
@@ -16,6 +20,7 @@ class GetVaccineController:
 
     def get_vaccines(self) :
         try:
+            logger.info(f"[{g.request_id}] fetched the list of vaccines")
             data = self.vaccine_handler.get_vaccines()
             return {
                 "vaccines": data

@@ -1,7 +1,11 @@
+import logging
 from flask import g
 
 from utils.exceptions import CustomException
 from handlers.approve_dose_handler import ApproveDoseHandler
+
+
+logger = logging.getLogger(__name__)
 
 
 class GetApprovedInfoController:
@@ -20,6 +24,8 @@ class GetApprovedInfoController:
 
         try:
             list = self.approve_dose_handler.get_list_to_approve()
+            logger.info(f"[{g.request_id}] fetched the list of unapproved data")
+            
             return {
                 "unapproved data": list
             }, 200

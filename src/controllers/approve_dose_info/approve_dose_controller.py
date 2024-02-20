@@ -1,7 +1,12 @@
+import logging
 from flask import g
 
 from utils.exceptions import CustomException
 from handlers.approve_dose_handler import ApproveDoseHandler
+
+
+logger = logging.getLogger(__name__)
+
 
 class ApproveDoseController:
         
@@ -14,8 +19,8 @@ class ApproveDoseController:
             This method is used to approve the details by admin. 
         """
         try:
-
             self.approve_dose_handler.approve_info(approval_id)
+            logger.info(f"[{g.request_id}] approved user details")
 
             return {
                 "message": "User details approved successfully!"

@@ -1,3 +1,4 @@
+import logging
 from flask import g
 from datetime import date
 
@@ -5,6 +6,9 @@ from config.queries.db_queries import DbConfig
 from database. database_operations import db
 from utils.exceptions import CustomException
 from handlers.user_handler import UserHandler
+
+
+logger = logging.getLogger(__name__)
 
 
 class ShowUserController:
@@ -20,6 +24,7 @@ class ShowUserController:
         """ This method is used to display the list of all the users. """
 
         try:
+            logger.info(f"[{g.request_id}] fetched all the users")
             data = self.user_handler.get_all_users(dose_date, dose_num, vaccine_name)
 
             return {

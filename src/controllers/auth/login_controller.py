@@ -31,6 +31,7 @@ class LoginController:
                 identity = user_data["user_id"],
                 additional_claims = {"role": user_data['role']}    
             )
+            logger.info(f"[{g.request_id}] logged in successfully")
 
             return {
                 "message": "Logged In Successfully!",

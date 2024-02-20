@@ -1,3 +1,6 @@
+import logging
+from flask import g
+
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
 from utils.exceptions import NoDataError

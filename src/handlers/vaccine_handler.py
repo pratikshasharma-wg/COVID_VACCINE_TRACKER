@@ -18,9 +18,6 @@ class VaccineHandler:
     def get_vaccines(self):
         
         data = db.fetch_data(DbConfig.FETCH_VACCINE)
-
-        if not data:
-            raise NoDataError(204, "No Content", "Currently no data available!!!")
         
         return data
         

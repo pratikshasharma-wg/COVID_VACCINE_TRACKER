@@ -1,8 +1,12 @@
+import logging
 from flask import g
 from flask_jwt_extended import get_jwt_identity
 
 from utils.exceptions import CustomException
 from handlers.dose_handlers import DoseHandlers
+
+
+logger = logging.getLogger(__name__)
 
 
 class AddDoseController:
@@ -19,13 +23,14 @@ class AddDoseController:
 
         user_id = get_jwt_identity()
         try:
-
             self.dose_handler.add_dose_info(
                 user_id, 
                 dose_info["vaccine_name"], 
                 dose_info["dose_date"], 
                 dose_info["dose_cid"]
             )
+            logger.info(f"[{g.request_id}] added dose details")
+
         except CustomException as e:
             return e.dump(), e.code
         return {

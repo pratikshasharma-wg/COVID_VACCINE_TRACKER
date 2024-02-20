@@ -1,8 +1,12 @@
+import logging
 from flask import g
 
 from config.prints.prints import Prints
 from handlers.vaccine_handler import VaccineHandler
 from utils.exceptions import CustomException
+
+
+logger = logging.getLogger(__name__)
 
 
 class AddVaccineController:
@@ -18,7 +22,7 @@ class AddVaccineController:
         """ This method is used to add new vaccine"""
 
         try:
-            
+            logger.info(f"[{g.request_id}] created new vaccine named {vaccine_info["vaccine_name"]}")
             self.vaccine_handler.create_vaccine(vaccine_info["vaccine_name"])
             return {
                 Prints.MSG : f"Vaccine with name: {vaccine_info['vaccine_name']} added successfully!!!"
