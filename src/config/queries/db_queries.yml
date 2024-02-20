@@ -47,7 +47,7 @@ USER_DATA : 'SELECT * FROM auth WHERE email = %s'
 
 UPDATE_PWD : 'UPDATE auth SET password = %s, is_def_pwd_changed = "True" WHERE email = %s'
 
-ADD_USER : 'INSERT INTO auth VALUES (%s,%s,%s,"Employee","False")'
+ADD_USER : "INSERT INTO auth (user_id, email, password) VALUES (%s, %s, %s)"
 
 FETCH_BY_DOSE : 'SELECT user_id, email, vaccination_status FROM user_details WHERE vaccination_status = %s'
 
@@ -107,7 +107,7 @@ UPDATE_GENDER : 'UPDATE user_details SET gender = %s WHERE user_id = %s'
 
 FETCH_APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Yes"'
 
-ADD_USER_DETAILS : 'INSERT INTO user_details (user_id, email) values (%s,%s)'
+ADD_USER_DETAILS : "INSERT INTO user_details (user_id, email) values (%s,%s)"
 
 FETCH_AUTH_DATA : 'SELECT * FROM auth WHERE email = %s'
 

@@ -16,6 +16,8 @@ class DBOperations:
     save_data() : Saves data in database
     fetch_data() : Fetches data from database
     """
+    connection = None
+    cursor = None
 
     def __init__(self) -> None:
         """
@@ -23,20 +25,19 @@ class DBOperations:
         Parameters = self
         Return Type = None
         """
-        try:
-            self.connection = pymysql.connect(
-                user='avnadmin',
-                password='AVNS_cl7x1MQtwAjEsPLPmUg',
-                cursorclass=pymysql.cursors.DictCursor,
-                host='mysql-1debdabb-pratikshas152001-e8c8.a.aivencloud.com',
-                database='my_db',
-                port = 27856
-            )
-            self.cursor = self.connection.cursor()
-            # self.cursor.execute('USE my_db')
-
-        except pymysql.Error:
-            print("Connection to DB cannot be made. Please try again!")
+        if DBOperations.connection is None:
+            try:
+                DBOperations.connection = pymysql.connect(
+                    user='avnadmin',
+                    password='AVNS_cl7x1MQtwAjEsPLPmUg',
+                    cursorclass=pymysql.cursors.DictCursor,
+                    host='mysql-1debdabb-pratikshas152001-e8c8.a.aivencloud.com',
+                    database='my_db',
+                    port = 27856
+                )
+                DBOperations.cursor = DBOperations.connection.cursor()
+            except pymysql.Error:
+                print("Connection to DB cannot be made. Please try again!")
 
 
     def create_tables(self) -> None:
