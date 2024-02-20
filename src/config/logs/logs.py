@@ -1,6 +1,7 @@
+import os
 import yaml
-
-FPATH = "src\\config\\logs\\logs.yml"
+current_directory = os.path.dirname(__file__)
+FPATH = os.path.join(current_directory, 'logs.yml')
 
 
 class Logs:

@@ -1,9 +1,9 @@
 """This module contains prompts to load for the project"""
 # third party imports
+import os
 import yaml
-
-# local imports
-# from config.app_config import AppConfig
+current_directory = os.path.dirname(__file__)
+FPATH = os.path.join(current_directory, 'prompts.yml')
 
 
 class PromptsConfig:

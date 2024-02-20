@@ -1,6 +1,7 @@
+import os
 import yaml
-
-FPATH = "src\\config\\Queries\\db_queries.yml"
+current_directory = os.path.dirname(__file__)
+FPATH = os.path.join(current_directory, 'db_queries.yml')
 
 
 class DbConfig:
