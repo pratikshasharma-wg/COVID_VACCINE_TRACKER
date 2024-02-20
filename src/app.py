@@ -16,11 +16,13 @@ import os
 current_directory = os.path.dirname(__file__)
 FPATH = os.path.join(current_directory, 'logs.txt')
 
+
 logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
                     level = logging.DEBUG,
                     filename = FPATH)
 
 logger = logging.getLogger('app')
+
 
 def create_app():
 

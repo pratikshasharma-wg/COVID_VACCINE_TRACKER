@@ -71,15 +71,15 @@ FETCH_BY_DOSE2_DATE : |
 
 ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (%s)'
 
-FETCH_USER : 'SELECT * FROM dose_details WHERE user_id = %s'
+FETCH_USER : "SELECT * FROM dose_details WHERE user_id = %s"
 
 FETCH_USER_DOSE_2: 'Select * from dose_details WHERE user_id = %s and dose_num = %s'
 
-APPROVE_DOSE_INFO : 'UPDATE admin_approval SET dose_is_approved = "Yes" WHERE approval_id = %s'
+APPROVE_DOSE_INFO : "UPDATE admin_approval SET dose_is_approved = 'Yes' WHERE approval_id = %s"
 
 FETCH_APPROVAL_DATA_ALL : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
 
-FETCH_APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
+FETCH_APPROVAL_DATA : "SELECT * FROM admin_approval WHERE dose_is_approved = 'No' "
 
 FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
 

@@ -11,8 +11,6 @@ class ApproveDoseHandler:
     def get_list_to_approve(self):
 
         data = db.fetch_data(DbConfig.FETCH_APPROVAL_DATA)
-        if not data:
-            raise NoDataError(204, "No Content", "Users list is empty")
         
         return data
 

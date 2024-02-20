@@ -29,7 +29,7 @@ class User(MethodView):
 
         logger.info("{g.request_id}] hits /users post method endpoint")
         return self.add_user.add_user(user_info)
-    
+
 
     @role_required(["Admin"])
     def get(self):
