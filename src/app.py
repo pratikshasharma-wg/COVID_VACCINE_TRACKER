@@ -12,16 +12,18 @@ from resources.dose_details import blp as dose_blp
 from resources.authentication import blp as login_blp
 from resources.profile import blp as profile_blp
 from resources.approved_dose_info import get_blp, approve_blp
-
+import os
+current_directory = os.path.dirname(__file__)
+FPATH = os.path.join(current_directory, 'logs.txt')
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
                     level = logging.DEBUG,
-                    filename = 'src\\config\\logs\\logs.txt')
+                    filename = FPATH)
 
-logger = logging.getLogger('main')
+logger = logging.getLogger('app')
 
 
-if __name__ == "__main__":  
+if __name__ == "__app__":  
 
     db.create_tables()
     app = Flask(__name__)
