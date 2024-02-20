@@ -12,11 +12,12 @@ class ApproveDoseController:
             This method is used to approve the details by admin. 
         """
         try:
+
             self.approve_dose_handler.approve_info(approval_id)
 
             return {
                 "message": "User details approved successfully!"
             }, 200
-        
+
         except CustomException as e:
             return e.dump(), e.code

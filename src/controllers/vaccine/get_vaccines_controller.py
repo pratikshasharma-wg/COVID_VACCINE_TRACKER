@@ -17,9 +17,7 @@ class GetVaccineController:
         try:
             data = self.vaccine_handler.get_vaccines()
             return {
-                "vaccines": [
-                    data
-                ]
+                "vaccines": data
             }, 200
         
         except CustomException as e:

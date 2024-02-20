@@ -36,13 +36,12 @@ class UserHandler:
     def get_all_users(self, dose_date, dose_num, vaccine_name):
      
         users = db.fetch_data(DbConfig.FETCH_USER_DETAILS)
-
         if dose_date:
-            users = filter(lambda user: user[3] == dose_date, users)
+            users = tuple(filter(lambda user: user["dose_date"] == dose_date, users))
         if dose_num:
-            users = filter(lambda user: user[4] == dose_num, users)
+            users = tuple(filter(lambda user: user["dose_num"] == dose_num, users))
         if vaccine_name:
-            users = filter(lambda user: user[2] == vaccine_name, users)
+            users = tuple(filter(lambda user: user["vaccine_name"] == vaccine_name, users))
         
         return users
 
@@ -55,7 +54,7 @@ class UserHandler:
 
     def get_profile(self, user_id):
         data = db.fetch_data(DbConfig.FETCH_PROFILE, (user_id,))
-        return data
+        return data[0]
 
     
     def get_unvaccinated(self):
@@ -64,7 +63,7 @@ class UserHandler:
             DbConfig.FETCH_DOSE_0_EMPLOYEES
         )
         if data is None:
-            raise NoDataError(404, "No content", "Currently no user data available!!!")
+            raise NoDataError(204, "No content", "Currently no user data available!!!")
         
         return data
 
@@ -75,7 +74,7 @@ class UserHandler:
             DbConfig.FETCH_DOSE_1_EMPLOYEES
         )
         if data is None:
-            raise NoDataError(404, "No content", "Currently no user data available!!!")
+            raise NoDataError(204, "No content", "Currently no user data available!!!")
         
         return data
 
@@ -106,6 +105,14 @@ class UserHandler:
 
         data = db.fetch_data(DbConfig.FETCH_USERS_BY_DATE, (date,))
         if data is None:
-            raise NoDataError(204, "Content", "Currently no users data available!")
+            raise NoDataError(204, "No Content", "Currently no users data available!")
 
+        return data
+
+    def get_approved_dose_users(self):
+
+        data = db.fetch_data(DbConfig.FETCH_APPROVED_DATA)
+        if data is None:
+            raise NoDataError(204, "No Content", "Currently no users data available!")
+        
         return data

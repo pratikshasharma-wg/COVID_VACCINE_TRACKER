@@ -114,3 +114,5 @@ class PromptsConfig:
             cls.ENTER_DOSE_2_DATE = data["ENTER_DOSE_2_DATE"]
             cls.ENTER_DOSE_1_CID = data["ENTER_DOSE_1_CID"]
             cls.ENTER_DOSE_2_CID = data["ENTER_DOSE_2_CID"]
+
+PromptsConfig.load()

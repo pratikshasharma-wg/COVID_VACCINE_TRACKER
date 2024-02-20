@@ -11,15 +11,15 @@ class GetApprovedInfoController:
         self.approve_dose_handler = ApproveDoseHandler()
 
 
-    def show_info_to_approve(self, dose_num) -> bool:
+    def show_info_to_approve(self):
         """ 
             This method is used to show the data to be approved by admin. 
         """
 
         try:
-            list = self.approve_dose_handler.get_list_to_approve(dose_num)
+            list = self.approve_dose_handler.get_list_to_approve()
             return {
-                "approved_data": list
+                "unapproved data": list
             }, 200
 
         except CustomException as e:

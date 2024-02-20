@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
 from utils.exceptions import AlreadyExistsError, NoDataError
@@ -27,41 +29,44 @@ class DoseHandlers:
 
     def add_dose_info(self, user_id, vaccine_name, dose_1_date, dose_1_cid):
         
-        data = db.fetch_data(DbConfig.FETCH_USER, user_id)
-        print(data)
+        data = db.fetch_data(DbConfig.FETCH_USER, (user_id,))
+        
         if data:
             raise AlreadyExistsError(409, "Conflict", "Dose details already added!!!")
-
-        try:
-            db.save_data(
-            DbConfig.ADD_DOSE_DETAILS,
-            (
-                user_id,
-                vaccine_name,
-                1,
-                dose_1_date,
-                dose_1_cid,
-            ),
-            )
-
-            db.save_data(
-                DbConfig.ADD_TO_ADMIN_APPROVAL,
-                (
-                    user_id,
-                    1,
-                    dose_1_cid,
-                ),
-            )
-        except:
-            raise AlreadyExistsError(500, "Internal", "Dose details already added!!!")
-        
-
-    def update_dose_info(self, user_id, dose_date, dose_cid):
         
         db.save_data(
         DbConfig.ADD_DOSE_DETAILS,
         (
             user_id,
+            vaccine_name,
+            1,
+            dose_1_date,
+            dose_1_cid,
+        ),
+        )
+
+        db.save_data(
+            DbConfig.ADD_TO_ADMIN_APPROVAL,
+            (
+                user_id,
+                1,
+                dose_1_cid,
+            ),
+        )
+        
+
+    def update_dose_info(self, user_id, vaccine_name, dose_date, dose_cid):
+
+        data = db.fetch_data(DbConfig.FETCH_USER_DOSE_2, (user_id,2,))
+        
+        if data:
+            raise AlreadyExistsError(409, "Conflict", "Dose details already added!!!")
+        
+        db.save_data(
+        DbConfig.ADD_DOSE_DETAILS,
+        (
+            user_id,
+            vaccine_name,
             2,
             dose_date,
             dose_cid,

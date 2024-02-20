@@ -21,6 +21,7 @@ passlib = "*"
 marshmallow = "*"
 python-dotenv = "*"
 gunicorn = "*"
+pymysql = "*"
 
 [dev-packages]
 

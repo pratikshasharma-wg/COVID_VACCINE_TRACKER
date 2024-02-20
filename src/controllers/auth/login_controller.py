@@ -36,6 +36,6 @@ class LoginController:
                 "message": "Logged In Successfully!",
                 "access_token": access_token
             }, 200
-                
+    
         except CustomException as e:
             return e.dump(), e.code

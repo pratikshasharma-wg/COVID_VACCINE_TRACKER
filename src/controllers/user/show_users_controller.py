@@ -71,3 +71,15 @@ class ShowUserController:
         
         except CustomException as e:
             return e.dump(), e.code
+
+    def show_users_approved_dose(self) -> list:
+
+        try:
+            data = self.user_handler.get_approved_dose_users()
+            if data:
+                return {
+                    "users": data
+                    }, 200
+        
+        except CustomException as e:
+            return e.dump(), e.code

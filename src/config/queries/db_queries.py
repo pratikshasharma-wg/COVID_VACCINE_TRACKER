@@ -31,7 +31,7 @@ class DbConfig:
     SELECT_DOSE1_DATE = None
     UPDATE_NAME = None
     UPDATE_GENDER = None
-    APPROVED_DATA = None
+    FETCH_APPROVED_DATA = None
     ADD_USER_DETAILS = None
     FETCH_AUTH_DATA = None
     FETCH_VACCINE_NAME = None
@@ -47,6 +47,7 @@ class DbConfig:
     FETCH_APPROVAL_DATA_ALL = None
     FETCH_SPECIFIC_VACCINE = None
     FETCH_PROFILE = None
+    FETCH_USER_DOSE_2 = None
 
     @classmethod
     def load(cls):
@@ -79,7 +80,7 @@ class DbConfig:
             cls.SELECT_DOSE1_DATE = data["SELECT_DOSE1_DATE"]
             cls.UPDATE_NAME = data["UPDATE_NAME"]
             cls.UPDATE_GENDER = data["UPDATE_GENDER"]
-            cls.APPROVED_DATA = data["APPROVED_DATA"]
+            cls.FETCH_APPROVED_DATA = data["FETCH_APPROVED_DATA"]
             cls.ADD_USER_DETAILS = data["ADD_USER_DETAILS"]
             cls.FETCH_AUTH_DATA = data["FETCH_AUTH_DATA"]
             cls.FETCH_VACCINE_NAME = data["FETCH_VACCINE_NAME"]
@@ -96,5 +97,6 @@ class DbConfig:
             cls.FETCH_SPECIFIC_VACCINE = data['FETCH_SPECIFIC_VACCINE']
             cls.FETCH_USERS_BY_DATE = data['FETCH_USERS_BY_DATE']
             cls.FETCH_PROFILE = data['FETCH_PROFILE']
+            cls.FETCH_USER_DOSE_2 = data['FETCH_USER_DOSE_2']
 
 DbConfig.load()

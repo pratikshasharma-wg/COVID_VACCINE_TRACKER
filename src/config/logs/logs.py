@@ -32,3 +32,5 @@ class Logs:
             cls.PROFILE_UPDATED = data["PROFILE_UPDATED"]
             cls.NEW_USER_ADDED = data["NEW_USER_ADDED"]
             cls.FIRST_TIME_LOGIN = data['FIRST_TIME_LOGIN']
+
+Logs.load()

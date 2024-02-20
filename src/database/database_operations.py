@@ -1,5 +1,5 @@
 import hashlib
-import mysql.connector
+import pymysql
 from typing import Union
 
 from config.queries.db_queries import DbConfig
@@ -24,13 +24,18 @@ class DBOperations:
         Return Type = None
         """
         try:
-            self.connection = mysql.connector.connect(user='root',
-                password='Pratiksha15@Skit',
-                host='127.0.0.1',
-                database='Covid_vaccine_tracker'
+            self.connection = pymysql.connect(
+                user='avnadmin',
+                password='AVNS_cl7x1MQtwAjEsPLPmUg',
+                cursorclass=pymysql.cursors.DictCursor,
+                host='mysql-1debdabb-pratikshas152001-e8c8.a.aivencloud.com',
+                database='my_db',
+                port = 27856
             )
-            self.cursor = self.connection.cursor(dictionary=True)
-        except mysql.connector.Error:
+            self.cursor = self.connection.cursor()
+            # self.cursor.execute('USE my_db')
+
+        except pymysql.Error:
             print("Connection to DB cannot be made. Please try again!")
 
 
@@ -45,9 +50,9 @@ class DBOperations:
         self.cursor.execute(DbConfig.CREATE_DOSE_DETAILS_TABLE)
         self.cursor.execute(DbConfig.CREATE_ADMIN_APPROVAL_TABLE)
         self.cursor.execute(DbConfig.CREATE_VACCINE_TABLE)
-        # pw = "Pratiksha15@"
-        # hash = hashlib.sha256(pw.encode()).hexdigest()
-        # self.cursor.execute('INSERT INTO auth VALUES (%s,%s,%s,%s,%s)', (1111, "pratiksha15@gmail.com", hash, "Admin", 'True',))
+        pw = "Pratiksha15@"
+        hash = hashlib.sha256(pw.encode()).hexdigest()
+        self.cursor.execute('INSERT INTO auth VALUES (%s,%s,%s,%s,%s)', (1111, "pratiksha15@gmail.com", hash, "Admin", 'True',))
 
 
     def save_data(self, query: str, data: tuple) -> None:

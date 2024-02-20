@@ -1,6 +1,7 @@
 import logging
-from flask import Flask
+import shortuuid
 from flask_smorest import Api
+from flask import Flask, g
 from flask_jwt_extended import JWTManager
 
 
@@ -10,7 +11,7 @@ from resources.vaccine import blp as vaccine_blp
 from resources.dose_details import blp as dose_blp
 from resources.authentication import blp as login_blp
 from resources.profile import blp as profile_blp
-from resources.approved_dose_info import blp as approve_dose_blp
+from resources.approved_dose_info import get_blp, approve_blp
 
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
@@ -18,8 +19,8 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d
                     filename = 'src\\config\\logs\\logs.txt')
 
 logger = logging.getLogger('main')
-   
-    
+
+
 if __name__ == "__main__":  
 
     db.create_tables()
@@ -40,11 +41,17 @@ if __name__ == "__main__":
  
     jwt = JWTManager(app)
 
+    @app.before_request
+    def generate_request_id():
+        request_id = shortuuid.ShortUUID().random(length=15)
+        g.request_id = request_id
+
     api.register_blueprint(login_blp)
     api.register_blueprint(user_blp)
     api.register_blueprint(dose_blp)
     api.register_blueprint(vaccine_blp)
     api.register_blueprint(profile_blp)
-    api.register_blueprint(approve_dose_blp)
+    api.register_blueprint(get_blp)
+    api.register_blueprint(approve_blp)
 
     app.run(debug=True, port=3024)

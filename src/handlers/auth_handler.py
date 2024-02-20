@@ -12,9 +12,12 @@ class AuthHandler:
         user_data = db.fetch_data(
             DbConfig.FETCH_AUTH_DATA,
             (email,)
-        )[0]
-        
-        if user_data:
+            )
+
+        if not user_data:
+            raise InvalidCredentialsError(401,"Unauthorized","Please Enter valid Credentials!!!")
+        else:
+            user_data = user_data[0]
             db_password = user_data['password']
             password = hashlib.sha256(password.encode()).hexdigest()
             if password != db_password:
@@ -22,7 +25,6 @@ class AuthHandler:
     
         return user_data
 
-              
 
     # def update_default_password(self, email: str, hashed_password: str):
 

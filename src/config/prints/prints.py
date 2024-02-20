@@ -120,4 +120,6 @@ class Prints:
             cls.EXITING_APPLICATION = data["EXITING_APPLICATION"]
             cls.NO_USER_EXISTS = data["NO_USER_EXISTS"]
             cls.MSG = data["MSG"]
-            
+
+Prints.load()
+       

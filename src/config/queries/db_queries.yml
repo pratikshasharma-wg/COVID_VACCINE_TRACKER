@@ -1,29 +1,30 @@
 CREATE_AUTH_TABLE : |
   CREATE TABLE IF NOT EXISTS auth(
   user_id INTEGER PRIMARY KEY,
-  email varchar(25) UNIQUE NOT NULL,
-  password varchar(255) NOT NULL,
-  role varchar(25) DEFAULT "Employee",
-  is_def_pwd_changed varchar(25) DEFAULT 'False')
+  email VARCHAR(25) UNIQUE NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  role VARCHAR(25) DEFAULT 'Employee',
+  is_def_pwd_changed VARCHAR(25) DEFAULT 'False'
+  );
 
 CREATE_USER_DETAILS_TABLE : |
   CREATE TABLE IF NOT EXISTS user_details(
   user_id INTEGER PRIMARY KEY,
-  name varchar(25),
-  email varchar(25) UNIQUE,
-  gender varchar(25),
-  FOREIGN KEY(user_id) REFERENCES auth(user_id)
-  )
+  name VARCHAR(25),
+  email VARCHAR(25) UNIQUE,
+  gender VARCHAR(25),
+  FOREIGN KEY (user_id) REFERENCES auth (user_id)
+  );
 
 CREATE_DOSE_DETAILS_TABLE : |
   CREATE TABLE IF NOT EXISTS dose_details(
   s_no INTEGER PRIMARY KEY AUTO_INCREMENT,
   user_id INTEGER,
-  vaccine_name varchar(25) NOT NULL,
+  vaccine_name VARCHAR(25) NOT NULL,
   dose_num INTEGER NOT NULL,
-  dose_date varchar(25) NOT NULL,
-  dose_cid varchar(25) UNIQUE NOT NULL,
-  FOREIGN KEY(user_id) REFERENCES user_details(user_id)
+  dose_date VARCHAR(25) NOT NULL,
+  dose_cid VARCHAR(25) UNIQUE NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES user_details(user_id)
   )
 
 CREATE_ADMIN_APPROVAL_TABLE : |
@@ -32,8 +33,8 @@ CREATE_ADMIN_APPROVAL_TABLE : |
   user_id INTEGER NOT NULL,
   dose_num INTEGER NOT NULL,
   dose_cid varchar(25) NOT NULL,
-  dose_is_approved varchar(25) DEFAULT "No",
-  FOREIGN KEY(user_id) REFERENCES user_details(user_id)
+  dose_is_approved varchar(25) DEFAULT 'No',
+  FOREIGN KEY(user_id) REFERENCES user_details (user_id)
   )
 
 CREATE_VACCINE_TABLE : |
@@ -72,11 +73,13 @@ ADD_VACCINE : 'INSERT INTO vaccine (vaccine_name) VALUES (%s)'
 
 FETCH_USER : 'SELECT * FROM dose_details WHERE user_id = %s'
 
+FETCH_USER_DOSE_2: 'Select * from dose_details WHERE user_id = %s and dose_num = %s'
+
 APPROVE_DOSE_INFO : 'UPDATE admin_approval SET dose_is_approved = "Yes" WHERE approval_id = %s'
 
 FETCH_APPROVAL_DATA_ALL : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
 
-FETCH_APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = %s'
+FETCH_APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" '
 
 FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
 
@@ -102,7 +105,7 @@ UPDATE_NAME : 'UPDATE user_details SET name = %s WHERE user_id = %s'
 
 UPDATE_GENDER : 'UPDATE user_details SET gender = %s WHERE user_id = %s'
 
-APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Yes"'
+FETCH_APPROVED_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "Yes"'
 
 ADD_USER_DETAILS : 'INSERT INTO user_details (user_id, email) values (%s,%s)'
 
