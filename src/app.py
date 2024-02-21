@@ -39,11 +39,8 @@ def create_app():
         "OPENAPI_SWAGGER_UI_URL"
     ] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
 
-    def make_error(error: FailedValidation):
-        return error.dump(), error.code
-
     app.register_error_handler(Exception, lambda: ({"error": "something happened in server"}, 500))
-    app.register_error_handler(FailedValidation, make_error)
+    app.register_error_handler(FailedValidation, lambda error: ({error.dump(), error.code}))
 
     app.config["JWT_SECRET_KEY"] = "pratiksha"
     db.create_tables()

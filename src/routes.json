@@ -1,0 +1,44 @@
+[
+    {
+        "iterationTitle": "admin flow",
+        "email": "pratiksha15@gmail.com",
+        "password": "Pratiksha15@",
+        "routes": [
+            "login admin",
+            "get all vaccines",
+            "create new vaccine",
+            "get all users",
+            "create new user",
+            "get unapproved info",
+            "approve info"
+        ]
+    },
+    {
+        "iterationTitle": "employee flow",
+        "routes": [
+            "login employee",
+            "view profile",
+            "update profile",
+            "get all vaccines",
+            "add dose info",
+            "add second dose info"
+        ]
+    },
+    {
+        "iterationTitle": "invalid data flow",
+        "email": "pratiksha15@gmail.com",
+        "password": "Pratiksha15@",
+        "routes": [
+            "invalid login",
+            "login admin",
+            "add invalid vaccine",
+            "add invalid user",
+            "invalid approve info",
+            "invalid login emp",
+            "login employee",
+            "invalid update profile",
+            "invalid add dose",
+            "invalid add second dose"
+        ]
+    }
+]
