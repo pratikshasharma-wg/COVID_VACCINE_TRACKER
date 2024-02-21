@@ -1,6 +1,7 @@
 from marshmallow import Schema, fields
+from .schema_utils import CustomSchema
 
-class AddDoseDetailsSchema(Schema):
+class AddDoseDetailsSchema(CustomSchema):
 
     vaccine_name = fields.Str(required=True)
     dose_date = fields.Str(required=True)

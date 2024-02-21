@@ -1,3 +1,4 @@
+import os
 import logging
 import shortuuid
 from flask_smorest import Api
@@ -5,6 +6,7 @@ from flask import Flask, g
 from flask_jwt_extended import JWTManager
 
 
+from utils.exceptions import FailedValidation
 from database.database_operations import db
 from resources.users import blp as user_blp
 from resources.vaccine import blp as vaccine_blp
@@ -12,7 +14,8 @@ from resources.dose_details import blp as dose_blp
 from resources.authentication import blp as login_blp
 from resources.profile import blp as profile_blp
 from resources.approved_dose_info import get_blp, approve_blp
-import os
+
+
 current_directory = os.path.dirname(__file__)
 FPATH = os.path.join(current_directory, 'logs.txt')
 
@@ -36,7 +39,12 @@ def create_app():
         "OPENAPI_SWAGGER_UI_URL"
     ] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
 
+    def make_error(error: FailedValidation):
+        return error.dump(), error.code
+
     app.register_error_handler(Exception, lambda: ({"error": "something happened in server"}, 500))
+    app.register_error_handler(FailedValidation, make_error)
+
     app.config["JWT_SECRET_KEY"] = "pratiksha"
     db.create_tables()
 
