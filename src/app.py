@@ -37,3 +37,5 @@ def create_app():
         jwt_handler()
 
     return app
+
+app = create_app()

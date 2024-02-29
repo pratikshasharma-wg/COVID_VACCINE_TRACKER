@@ -1,16 +1,16 @@
 import functools
-from config.logs.logs import Logs
-from config.prints.prints import Prints
-from config.prompts.prompts import PromptsConfig
-from config.queries.db_queries import DbConfig
+
 from flask_jwt_extended import (
     verify_jwt_in_request, 
     get_jwt, 
-    get_jti
 )
 from flask_smorest import abort
 
 
+from config.logs.logs import Logs
+from config.prints.prints import Prints
+from config.prompts.prompts import PromptsConfig
+from config.queries.db_queries import DbConfig
 from handlers.auth_handler import AuthHandler
 
 
