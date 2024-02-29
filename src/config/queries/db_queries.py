@@ -49,6 +49,9 @@ class DbConfig:
     FETCH_SPECIFIC_VACCINE = None
     FETCH_PROFILE = None
     FETCH_USER_DOSE_2 = None
+    CREATE_REVOKED_TOKENS_TABLE = None
+    ADD_REVOKED_TOKEN = None
+    FETCH_REV_TOKEN = None
 
     @classmethod
     def load(cls):
@@ -99,5 +102,8 @@ class DbConfig:
             cls.FETCH_USERS_BY_DATE = data['FETCH_USERS_BY_DATE']
             cls.FETCH_PROFILE = data['FETCH_PROFILE']
             cls.FETCH_USER_DOSE_2 = data['FETCH_USER_DOSE_2']
+            cls.CREATE_REVOKED_TOKENS_TABLE = data['CREATE_REVOKED_TOKENS_TABLE']
+            cls.ADD_REV_TOKEN = data['ADD_REV_TOKEN']
+            cls.FETCH_REV_TOKEN = data['FETCH_REV_TOKEN']
 
 DbConfig.load()

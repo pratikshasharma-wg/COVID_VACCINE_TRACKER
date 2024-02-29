@@ -4,7 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 
 
-from utils.decorators import role_required
+from utils.decorators import access_pass
 from controllers.user.show_users_controller import ShowUserController
 from controllers.approve_dose_info.approve_dose_controller import ApproveDoseController
 from controllers.approve_dose_info.get_approved_info_controller import GetApprovedInfoController
@@ -24,7 +24,7 @@ class GetInfoToApprove(MethodView):
         self.show_users = ShowUserController()
     
 
-    @role_required(["Admin"])
+    @access_pass(["Admin"])
     def get(self):
         
         logger.info(f"[{g.request_id}] hits /users/approve get method endpoint")
@@ -38,7 +38,7 @@ class ApproveDoseInfo(MethodView):
         self.approve_dose = ApproveDoseController()
 
 
-    @role_required(["Admin"])
+    @access_pass(["Admin"])
     def put(self, approval_id):
         """Approves the dose details of an employee"""
         

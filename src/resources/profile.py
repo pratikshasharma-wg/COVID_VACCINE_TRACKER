@@ -4,7 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint, abort
 from flask_jwt_extended import jwt_required
 
-from utils.decorators import role_required
+from utils.decorators import access_pass
 from schemas.user import UpdatePersonalDetailsSchema
 from controllers.user.profile_controller import ProfileController
 
@@ -20,8 +20,7 @@ class MyProfile(MethodView):
     def __init__(self) -> None:
         self.profile = ProfileController()
 
-    @role_required(["Employee"])
-    @jwt_required()
+    @access_pass(["Employee"])
     @blp.arguments(UpdatePersonalDetailsSchema)
     def put(self, user_profile_info):
         """Updates the profile info of an employee"""
@@ -30,8 +29,7 @@ class MyProfile(MethodView):
         return self.profile.update_profile(user_profile_info)
     
 
-    @role_required(["Employee"])
-    @jwt_required()
+    @access_pass(["Employee"])
     def get(self):
         """Retreives the profile info of an employee"""
 

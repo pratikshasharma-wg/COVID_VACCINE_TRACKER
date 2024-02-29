@@ -1,11 +1,17 @@
-import logging
 import functools
 from config.logs.logs import Logs
 from config.prints.prints import Prints
 from config.prompts.prompts import PromptsConfig
 from config.queries.db_queries import DbConfig
-from flask_jwt_extended import verify_jwt_in_request, get_jwt
+from flask_jwt_extended import (
+    verify_jwt_in_request, 
+    get_jwt, 
+    get_jti
+)
 from flask_smorest import abort
+
+
+from handlers.auth_handler import AuthHandler
 
 
 def load_config(func):
@@ -20,7 +26,7 @@ def load_config(func):
     return function
 
 
-def role_required(lst):
+def access_pass(lst):
 
     def decorator(func):
     
@@ -28,10 +34,13 @@ def role_required(lst):
         def wrap_func(*args, **kwargs):
             verify_jwt_in_request()
             claims = get_jwt()
-            if claims["role"] in lst:
-                return func(*args, **kwargs)
-            else:
+            jti = claims["jti"]
+            if AuthHandler().check_token_in_db(jti):
+                abort(401, message = "You are logged out! Please login again!")
+            elif claims["role"] not in lst:
                 abort(403, message = "Permission not granted!")
+            else:
+                return func(*args, **kwargs)
         
         return wrap_func
     

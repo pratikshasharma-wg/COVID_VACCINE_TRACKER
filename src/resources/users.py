@@ -3,7 +3,7 @@ from flask import request, g
 from flask.views import MethodView
 from flask_smorest import Blueprint
 
-from utils.decorators import role_required
+from utils.decorators import access_pass
 from schemas.user import AddUserSchema
 from controllers.user.add_user_controller import AddUserController
 from controllers.user.show_users_controller import ShowUserController
@@ -22,7 +22,7 @@ class User(MethodView):
         self.get_user = ShowUserController()
 
 
-    @role_required(["Admin"])
+    @access_pass(["Admin"])
     @blp.arguments(AddUserSchema)
     def post(self, user_info):
         """Adds new employee into the database"""
@@ -31,7 +31,7 @@ class User(MethodView):
         return self.add_user.add_user(user_info)
 
 
-    @role_required(["Admin"])
+    @access_pass(["Admin"])
     def get(self):
         args = request.args
         dose_date = args.get('dose-date')

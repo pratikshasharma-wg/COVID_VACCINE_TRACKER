@@ -43,6 +43,13 @@ CREATE_VACCINE_TABLE : |
   vaccine_name varchar(25) NOT NULL
   )
 
+CREATE_REVOKED_TOKENS_TABLE : |
+  CREATE TABLE IF NOT EXISTS revoked_tokens(
+    rev_token_id VARCHAR(255) PRIMARY KEY,
+    rev_token_jti VARCHAR(255) UNIQUE NOT NULL,
+    rev_token_exp VARCHAR(255) NOT NULL
+  )
+
 USER_DATA : 'SELECT * FROM auth WHERE email = %s'
 
 UPDATE_PWD : 'UPDATE auth SET password = %s, is_def_pwd_changed = "True" WHERE email = %s'
@@ -143,3 +150,7 @@ FETCH_USERS_BY_DATE : "Select u.user_id, u.email, d.vaccine_name, d.dose_date, d
  WHERE date = %s"
 
 FETCH_PROFILE : "Select * FROM user_details where user_id=%s"
+
+ADD_REV_TOKEN : "INSERT INTO revoked_tokens VALUES (%s, %s, %s)"
+
+FETCH_REV_TOKEN : "SELECT 1 FROM revoked_tokens WHERE rev_token_jti = %s"

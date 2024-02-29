@@ -8,30 +8,28 @@ from utils.exceptions import AlreadyExistsError, NoDataError
 class UserHandler:
 
     def add_user(self, email, password):
-        try:
-            user_id = int(shortuuid.ShortUUID("123456789").random(4))
-            is_user_exist = db.fetch_data(DbConfig.FETCH_AUTH_DATA, (email.lower(),))
-            if is_user_exist:
-                raise AlreadyExistsError(409, "Conflict", "User with this email already exists!!!")
 
-            password = hashlib.sha256(password.encode()).hexdigest()
+        user_id = int(shortuuid.ShortUUID("123456789").random(4))
+        is_user_exist = db.fetch_data(DbConfig.FETCH_AUTH_DATA, (email.lower(),))
+        if is_user_exist:
+            raise AlreadyExistsError(409, "Conflict", "User with this email already exists!!!")
 
-            db.save_data(
-                DbConfig.ADD_USER,(
-                    user_id,
-                    email,
-                    password
-                ),
-            )
-            db.save_data(
-                DbConfig.ADD_USER_DETAILS,
-                (
-                    user_id,
-                    email
-                ),
-            )
-        except:
-            pass
+        password = hashlib.sha256(password.encode()).hexdigest()
+
+        db.save_data(
+            DbConfig.ADD_USER,(
+                user_id,
+                email,
+                password
+            ),
+        )
+        db.save_data(
+            DbConfig.ADD_USER_DETAILS,
+            (
+                user_id,
+                email
+            ),
+        )
         
 
     def get_all_users(self, dose_date, dose_num, vaccine_name):

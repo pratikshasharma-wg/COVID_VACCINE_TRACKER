@@ -4,7 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 
 from schemas.vaccine import CreateVaccineSchema
-from utils.decorators import role_required
+from utils.decorators import access_pass
 from controllers.vaccine.add_vaccine_controller import AddVaccineController
 from controllers.vaccine.get_vaccines_controller import GetVaccineController
 
@@ -22,7 +22,7 @@ class Vaccine(MethodView):
         self.get_vaccine = GetVaccineController()
 
 
-    @role_required(["Admin"])
+    @access_pass(["Admin"])
     @blp.arguments(CreateVaccineSchema)
     def post(self, vaccine_info):
         """Adds new vaccine"""
@@ -31,7 +31,7 @@ class Vaccine(MethodView):
         return self.add_vaccine.create_vaccine(vaccine_info)
     
 
-    @role_required(["Admin", "Employee"])
+    @access_pass(["Admin", "Employee"])
     def get(self):
         """Retrieves the list of vaccines"""
 

@@ -4,7 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 from flask_jwt_extended import jwt_required
 
-from utils.decorators import role_required
+from utils.decorators import access_pass
 from controllers.dose.add_dose_controller import AddDoseController
 from controllers.dose.update_dose_controller import UpdateDoseController
 from schemas.dose_details import AddDoseDetailsSchema
@@ -22,8 +22,7 @@ class DoseDetails(MethodView):
         self.add_dose = AddDoseController()
         self.update_dose = UpdateDoseController()
 
-    @role_required(["Employee"])
-    @jwt_required()
+    @access_pass(["Employee"])
     @blp.arguments(AddDoseDetailsSchema)
     def post(self, dose_info):
         """Adds dose details of a user"""
@@ -31,8 +30,7 @@ class DoseDetails(MethodView):
         logger.info("[{g.request_id}] hits /users/dose post method endpoint")
         return self.add_dose.add_dose_info(dose_info)
     
-    @role_required(["Employee"])
-    @jwt_required()
+    @access_pass(["Employee"])
     @blp.arguments(AddDoseDetailsSchema)
     def put(self, update_dose_info):
         """Updates the dose details of an employee"""

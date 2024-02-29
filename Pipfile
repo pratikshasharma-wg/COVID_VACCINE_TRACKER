@@ -22,6 +22,7 @@ marshmallow = "*"
 python-dotenv = "*"
 gunicorn = "*"
 pymysql = "*"
+uuid = "*"
 
 [dev-packages]
 

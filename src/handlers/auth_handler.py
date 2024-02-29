@@ -1,8 +1,12 @@
 import hashlib
+from uuid import uuid4
 
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
 from utils.exceptions import InvalidCredentialsError
+
+
+BLOCKLIST = set()
 
 
 class AuthHandler:
@@ -12,7 +16,7 @@ class AuthHandler:
         user_data = db.fetch_data(
             DbConfig.FETCH_AUTH_DATA,
             (email,)
-            )
+        )
 
         if not user_data:
             raise InvalidCredentialsError(401,"Unauthorized","Please Enter valid Credentials!!!")
@@ -25,13 +29,25 @@ class AuthHandler:
     
         return user_data
 
+    def logout_user(self, rev_token_jti, rev_token_exp):
+        """Add jwt to the revoked tokens table"""
 
-    # def update_default_password(self, email: str, hashed_password: str):
+        rev_token_id = uuid4()
+        db.save_data(
+            DbConfig.ADD_REV_TOKEN,
+            (rev_token_id, 
+            rev_token_jti, 
+            rev_token_exp)
+        )
 
-    #     db.save_data(
-    #         DbConfig.UPDATE_PWD,
-    #         (
-    #             hashed_password,
-    #             email,
-    #         ),
-    #     )
+    def check_token_in_db(self, jti):
+        """Check jwt jti in db"""
+
+        token_present = db.fetch_data(
+            DbConfig.FETCH_REV_TOKEN,
+            (jti,)
+        )
+        print(token_present)
+        print(db.fetch_data('SELECT * FROM revoked_tokens'))
+
+        return token_present != ()

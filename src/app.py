@@ -1,66 +1,39 @@
 import os
 import logging
-import shortuuid
-from flask_smorest import Api
-from flask import Flask, g
-from flask_jwt_extended import JWTManager
+from flask import Flask
 
-
-from utils.exceptions import FailedValidation
 from database.database_operations import db
-from resources.users import blp as user_blp
-from resources.vaccine import blp as vaccine_blp
-from resources.dose_details import blp as dose_blp
-from resources.authentication import blp as login_blp
-from resources.profile import blp as profile_blp
-from resources.approved_dose_info import get_blp, approve_blp
+from app_config import (
+    app_config, 
+    register_blueprint, 
+    register_error_handlers, 
+    register_request_id, 
+    jwt_handler
+)
 
 
 current_directory = os.path.dirname(__file__)
 FPATH = os.path.join(current_directory, 'logs.txt')
 
 
-logging.basicConfig(format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
-                    level = logging.DEBUG,
-                    filename = FPATH)
+logging.basicConfig(
+    format='%(asctime)s %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+    level = logging.DEBUG,
+    filename = FPATH
+)
 
 logger = logging.getLogger('app')
 
 
 def create_app():
 
-    app = Flask(__name__)
-    app.config["API_TITLE"] = "COVID Vaccine Tracker"
-    app.config["API_VERSION"] = "v1"
-    app.config["OPENAPI_VERSION"] = "3.0.3"
-    app.config["OPENAPI_URL_PREFIX"] = "/"
-    app.config["OPENAPI_SWAGGER_UI_PATH"] = "/swagger-ui"
-    app.config[
-        "OPENAPI_SWAGGER_UI_URL"
-    ] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
-
-    app.register_error_handler(Exception, lambda: ({"error": "something happened in server"}, 500))
-    app.register_error_handler(FailedValidation, lambda error: ({error.dump(), error.code}))
-
-    app.config["JWT_SECRET_KEY"] = "pratiksha"
     db.create_tables()
+    app = Flask(__name__)
+    with app.app_context():
+        app_config()
+        register_blueprint()
+        register_request_id()
+        register_error_handlers()
+        jwt_handler()
 
-    api = Api(app)
-
-    jwt = JWTManager(app)
-
-    @app.before_request
-    def generate_request_id():
-        request_id = shortuuid.ShortUUID().random(length=15)
-        g.request_id = request_id
-
-    api.register_blueprint(login_blp)
-    api.register_blueprint(user_blp)
-    api.register_blueprint(dose_blp)
-    api.register_blueprint(vaccine_blp)
-    api.register_blueprint(profile_blp)
-    api.register_blueprint(get_blp)
-    api.register_blueprint(approve_blp)
     return app
-    
-app = create_app()

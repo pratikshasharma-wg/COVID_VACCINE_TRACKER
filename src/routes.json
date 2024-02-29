@@ -29,7 +29,7 @@
         "email": "pratiksha15@gmail.com",
         "password": "Pratiksha15@",
         "routes": [
-            "invalid login",
+            "invalid login admin",
             "login admin",
             "add invalid vaccine",
             "add invalid user",
@@ -39,6 +39,21 @@
             "invalid update profile",
             "invalid add dose",
             "invalid add second dose"
+        ]
+    },
+    {
+        "iterationTitle": "unauthorized flow",
+        "routes": [
+            "unauthorized get vaccines",
+            "unauthorized add vaccine",
+            "unauthorized get users",
+            "unauthorized add user",
+            "unauthorized get unapproved users",
+            "unauthorized approve info",
+            "unauthorized get profile",
+            "unauthorized update profile",
+            "unauthorized add dose",
+            "unauthorized add second dose"
         ]
     }
 ]
