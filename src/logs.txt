@@ -2724,3 +2724,214 @@ TypeError: register_error_handlers.<locals>.<lambda>() takes 0 positional argume
 2024-02-27 19:38:23,497 INFO     [authentication.py:35] ['5YK7KaJexBd8oQV'] user logged out!
 2024-02-27 19:38:23,591 INFO     [_internal.py:96] 127.0.0.1 - - [27/Feb/2024 19:38:23] "POST /logout HTTP/1.1" 200 -
 2024-02-27 19:38:49,010 INFO     [_internal.py:96] 127.0.0.1 - - [27/Feb/2024 19:38:49] "[31m[1mPOST /vaccines HTTP/1.1[0m" 401 -
+2024-03-01 18:32:47,160 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 18:32:47,160 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-01 18:32:47,160 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:32:49,030 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:32:49,045 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:32:51,680 INFO     [authentication.py:24] [3KsrBSQ5Gv2KSym] hits /login endpoint
+2024-03-01 18:32:51,837 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 18:32:51] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-03-01 18:33:53,953 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:33:54,007 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:33:55,788 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:33:55,788 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:00,283 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:34:00,346 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:34:01,927 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:34:01,928 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:04,235 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:34:04,306 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:34:05,999 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:34:05,999 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:15,912 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:34:15,962 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:34:17,750 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:34:17,752 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:18,998 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:34:19,044 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:34:20,852 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:34:20,852 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:23,179 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-01 18:34:23,248 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:34:25,144 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:34:25,144 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:34:28,619 INFO     [authentication.py:24] [9u8J4sHZ5avdRTP] hits /login endpoint
+2024-03-01 18:34:28,824 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 18:34:28] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-03-01 18:35:12,817 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\login_controller.py', reloading
+2024-03-01 18:35:12,864 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:35:14,713 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:35:14,713 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:35:21,356 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\login_controller.py', reloading
+2024-03-01 18:35:21,403 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:35:22,857 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:35:22,857 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:36:25,494 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\login_controller.py', reloading
+2024-03-01 18:36:25,541 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:36:27,509 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:36:27,509 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:36:29,806 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\login_controller.py', reloading
+2024-03-01 18:36:29,872 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:36:31,525 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:36:31,526 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:36:53,279 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\user_handler.py', reloading
+2024-03-01 18:36:53,341 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:36:55,196 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:36:55,196 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:36:58,680 INFO     [authentication.py:24] [8RaMUuuUKtVJsx2] hits /login endpoint
+2024-03-01 18:36:58,882 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 18:36:58] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-03-01 18:37:24,500 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\user_handler.py', reloading
+2024-03-01 18:37:24,567 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 18:37:26,314 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 18:37:26,314 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 18:37:26,874 INFO     [authentication.py:24] [8mBdMnreiGSbDe6] hits /login endpoint
+2024-03-01 18:37:27,048 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 18:37:27] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-03-01 19:01:53,615 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-01 19:01:53,615 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-01 19:01:53,631 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:01:55,356 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 19:01:55,358 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-01 19:01:56,238 INFO     [authentication.py:24] [98CxPLpcNCBc7Ku] hits /login endpoint
+2024-03-01 19:01:56,321 INFO     [login_controller.py:47] [98CxPLpcNCBc7Ku] logged in successfully
+2024-03-01 19:01:56,321 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 19:01:56] "POST /login HTTP/1.1" 200 -
+2024-03-01 19:03:14,849 INFO     [users.py:30] {g.request_id}] hits /users post method endpoint
+2024-03-01 19:03:14,850 INFO     [add_user_controller.py:23] [BKu6DKNPMk4U2gn] added new user
+2024-03-01 19:03:15,278 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 19:03:15] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-03-01 19:03:38,953 INFO     [authentication.py:24] [8YeVkdNLJppH6Ku] hits /login endpoint
+2024-03-01 19:03:39,108 INFO     [login_controller.py:47] [8YeVkdNLJppH6Ku] logged in successfully
+2024-03-01 19:03:39,108 INFO     [_internal.py:96] 127.0.0.1 - - [01/Mar/2024 19:03:39] "POST /login HTTP/1.1" 200 -
+2024-03-01 19:05:01,134 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\login_controller.py', reloading
+2024-03-01 19:05:01,190 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:05:07,121 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:05:12,822 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:05:16,457 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:05:54,733 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:05:58,539 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-01 19:06:00,109 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-01 19:06:00,125 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:28:04,943 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-04 18:28:04,943 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-04 18:28:04,943 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:28:06,378 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:28:06,380 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:30:33,408 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:30:33,467 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:30:35,455 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:30:35,455 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:30:37,848 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:30:37,916 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:30:39,608 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:30:39,611 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:30:40,863 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:30:40,941 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:30:42,691 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:30:42,691 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:31:05,476 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:31:05,522 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:31:07,212 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:31:07,212 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:31:36,487 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:31:36,550 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:31:38,095 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:31:38,097 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:31:40,424 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-04 18:31:40,490 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:31:42,168 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:31:42,168 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:31:55,151 INFO     [authentication.py:26] [D49ZpTQjuDeaR9B] hits /login endpoint
+2024-03-04 18:31:55,268 INFO     [login_controller.py:47] [D49ZpTQjuDeaR9B] logged in successfully
+2024-03-04 18:31:55,269 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:31:55] "POST /login HTTP/1.1" 200 -
+2024-03-04 18:32:22,330 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\change_password.py', reloading
+2024-03-04 18:32:22,379 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:32:26,060 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:32:26,060 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:32:29,496 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\change_password.py', reloading
+2024-03-04 18:32:29,578 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:32:31,429 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:32:31,432 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:32:33,766 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\controllers\\auth\\change_password.py', reloading
+2024-03-04 18:32:33,831 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:32:37,691 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:32:37,693 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:32:44,735 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:32:44] "[33mGET /change-password HTTP/1.1[0m" 404 -
+2024-03-04 18:32:59,460 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\authentication.py', reloading
+2024-03-04 18:32:59,510 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:33:03,243 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:33:03,243 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:33:03,337 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:33:03] "[31m[1mGET /change-password HTTP/1.1[0m" 405 -
+2024-03-04 18:33:11,868 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:33:11] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-04 18:33:57,470 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\authentication.py', reloading
+2024-03-04 18:33:57,517 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:34:01,268 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:34:01,271 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:34:02,533 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\authentication.py', reloading
+2024-03-04 18:34:02,613 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:34:04,243 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:34:04,243 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:34:12,708 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:34:12] "[31m[1mPOST /change-password HTTP/1.1[0m" 401 -
+2024-03-04 18:34:26,283 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:34:26] "[31m[1mPOST /change-password HTTP/1.1[0m" 401 -
+2024-03-04 18:34:49,177 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:34:49] "[31m[1mPOST /change-password HTTP/1.1[0m" 403 -
+2024-03-04 18:35:41,490 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-04 18:35:41,490 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-04 18:35:41,490 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:35:43,094 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:35:43,094 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:35:43,881 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:35:43] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-04 18:36:00,510 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\authentication.py', reloading
+2024-03-04 18:36:01,593 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:36:04,099 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:36:04,100 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:36:09,704 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\authentication.py', reloading
+2024-03-04 18:36:09,757 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-04 18:36:11,388 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-04 18:36:11,393 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-04 18:36:13,221 INFO     [_internal.py:96] 127.0.0.1 - - [04/Mar/2024 18:36:13] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-05 18:03:57,051 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-05 18:03:57,051 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-05 18:03:57,069 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:03:59,113 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-05 18:03:59,128 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-05 18:04:04,920 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:04:04] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-05 18:04:22,696 INFO     [authentication.py:26] [92WfDfzW6PiqV75] hits /login endpoint
+2024-03-05 18:04:22,842 INFO     [login_controller.py:47] [92WfDfzW6PiqV75] logged in successfully
+2024-03-05 18:04:22,842 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:04:22] "POST /login HTTP/1.1" 200 -
+2024-03-05 18:04:28,829 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:04:28] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-05 18:06:59,771 INFO     [authentication.py:26] [8qdmyeo8TsbaQwd] hits /login endpoint
+2024-03-05 18:06:59,858 INFO     [login_controller.py:47] [8qdmyeo8TsbaQwd] logged in successfully
+2024-03-05 18:06:59,865 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:06:59] "POST /login HTTP/1.1" 200 -
+2024-03-05 18:07:10,440 INFO     [users.py:30] {g.request_id}] hits /users post method endpoint
+2024-03-05 18:07:10,447 INFO     [add_user_controller.py:23] [3jRFj6BDbtPBFdY] added new user
+2024-03-05 18:07:10,868 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:07:10] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-03-05 18:07:41,636 INFO     [authentication.py:26] [3Emety9rDqk5GjH] hits /login endpoint
+2024-03-05 18:07:41,780 INFO     [login_controller.py:47] [3Emety9rDqk5GjH] logged in successfully
+2024-03-05 18:07:41,780 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:07:41] "POST /login HTTP/1.1" 200 -
+2024-03-05 18:08:17,247 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:08:17] "[35m[1mPOST /change-password HTTP/1.1[0m" 500 -
+2024-03-05 18:09:34,425 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-05 18:09:34,496 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:09:36,319 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:09:38,567 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:09:42,729 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:09:44,571 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-05 18:09:44,572 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-05 18:09:48,193 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-05 18:09:48,304 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:09:50,212 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-05 18:09:50,216 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-05 18:10:14,179 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\handlers\\auth_handler.py', reloading
+2024-03-05 18:10:14,249 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-05 18:10:16,229 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-05 18:10:16,229 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-05 18:10:18,118 INFO     [_internal.py:96] 127.0.0.1 - - [05/Mar/2024 18:10:18] "POST /change-password HTTP/1.1" 200 -
+2024-03-07 06:38:09,428 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-07 06:38:09,429 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-03-07 06:38:09,432 INFO     [_internal.py:96]  * Restarting with stat
+2024-03-07 06:38:11,674 WARNING  [_internal.py:96]  * Debugger is active!
+2024-03-07 06:38:11,674 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-03-07 06:38:17,702 INFO     [authentication.py:26] [5o3TKUQ5RHa5Z5w] hits /login endpoint
+2024-03-07 06:38:17,771 INFO     [login_controller.py:47] [5o3TKUQ5RHa5Z5w] logged in successfully
+2024-03-07 06:38:17,773 INFO     [_internal.py:96] 127.0.0.1 - - [07/Mar/2024 06:38:17] "POST /login HTTP/1.1" 200 -

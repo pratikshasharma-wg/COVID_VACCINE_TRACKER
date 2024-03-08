@@ -21,13 +21,13 @@ class AuthHandler:
         if not user_data:
             raise InvalidCredentialsError(401,"Unauthorized","Please Enter valid Credentials!!!")
         else:
-            user_data = user_data[0]
-            db_password = user_data['password']
+            self.user_data = user_data[0]
+            db_password = self.user_data['password']
             password = hashlib.sha256(password.encode()).hexdigest()
             if password != db_password:
                 raise InvalidCredentialsError(401,"Unauthorized","Please Enter valid Credentials!!!")
     
-        return user_data
+        return self.user_data
 
     def logout_user(self, rev_token_jti, rev_token_exp):
         """Add jwt to the revoked tokens table"""
@@ -40,6 +40,15 @@ class AuthHandler:
             rev_token_exp)
         )
 
+    def change_password(self, user_id, new_password):
+        """Change password of the user."""
+
+        new_password = hashlib.sha256(new_password.encode()).hexdigest()
+        db.save_data(
+            DbConfig.CHANGE_PASSWORD,
+            ( new_password, "True", user_id )
+        )
+
     def check_token_in_db(self, jti):
         """Check jwt jti in db"""
 
@@ -47,7 +56,10 @@ class AuthHandler:
             DbConfig.FETCH_REV_TOKEN,
             (jti,)
         )
-        print(token_present)
-        print(db.fetch_data('SELECT * FROM revoked_tokens'))
 
         return token_present != ()
+
+    def check_default_pwd_changed(self):
+        """Checks whether the default password is changed and profile info is filled or not."""
+
+        return True if (self.user_data['is_def_pwd_changed'] == 1) else False

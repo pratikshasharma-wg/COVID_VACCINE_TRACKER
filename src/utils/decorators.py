@@ -39,6 +39,10 @@ def access_pass(lst):
                 abort(401, message = "You are logged out! Please login again!")
             elif claims["role"] not in lst:
                 abort(403, message = "Permission not granted!")
+            elif claims["default_pwd_changed"] == 0:
+                abort(403, message="Please change your default password!")
+            elif claims.get("profile_updated") is False:
+                abort(403, message="Please update your profile first!")
             else:
                 return func(*args, **kwargs)
         

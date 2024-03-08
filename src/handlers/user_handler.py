@@ -53,6 +53,7 @@ class UserHandler:
 
     def get_profile(self, user_id):
         data = db.fetch_data(DbConfig.FETCH_PROFILE, (user_id,))
+
         return data[0]
 
     

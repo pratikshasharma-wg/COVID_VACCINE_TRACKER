@@ -52,6 +52,7 @@ class DbConfig:
     CREATE_REVOKED_TOKENS_TABLE = None
     ADD_REVOKED_TOKEN = None
     FETCH_REV_TOKEN = None
+    CHANGE_PASSWORD = None
 
     @classmethod
     def load(cls):
@@ -105,5 +106,6 @@ class DbConfig:
             cls.CREATE_REVOKED_TOKENS_TABLE = data['CREATE_REVOKED_TOKENS_TABLE']
             cls.ADD_REV_TOKEN = data['ADD_REV_TOKEN']
             cls.FETCH_REV_TOKEN = data['FETCH_REV_TOKEN']
+            cls.CHANGE_PASSWORD = data['CHANGE_PASSWORD']
 
 DbConfig.load()

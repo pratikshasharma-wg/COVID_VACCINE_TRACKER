@@ -9,4 +9,4 @@ class AddUserSchema(CustomSchema):
 class UpdatePersonalDetailsSchema(CustomSchema):
 
     name = fields.Str(required=True, validate=validate.Regexp("^[a-z,A-Z ]{1,20}$"))
-    gender = fields.Str(required=True, validate=validate.Regexp("male" or "female"))
+    gender = fields.Str(required=True, validate=validate.Regexp("^((male)|(female))$"))

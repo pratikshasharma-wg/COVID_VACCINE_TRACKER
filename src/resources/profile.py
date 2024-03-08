@@ -1,8 +1,7 @@
 import logging
 from flask import g
 from flask.views import MethodView
-from flask_smorest import Blueprint, abort
-from flask_jwt_extended import jwt_required
+from flask_smorest import Blueprint
 
 from utils.decorators import access_pass
 from schemas.user import UpdatePersonalDetailsSchema
