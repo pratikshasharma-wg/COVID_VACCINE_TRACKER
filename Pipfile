@@ -23,6 +23,7 @@ python-dotenv = "*"
 gunicorn = "*"
 pymysql = "*"
 uuid = "*"
+flask-cors = "*"
 
 [dev-packages]
 

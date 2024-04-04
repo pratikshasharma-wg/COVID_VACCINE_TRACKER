@@ -1,6 +1,8 @@
 import os
 import logging
 from flask import Flask
+from flask_cors import CORS
+
 
 from database.database_operations import db
 from app_config import (
@@ -39,3 +41,4 @@ def create_app():
     return app
 
 app = create_app()
+CORS(app)

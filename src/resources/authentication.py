@@ -2,7 +2,7 @@ import logging
 from flask import g
 from flask.views import MethodView
 from flask_smorest import Blueprint
-from flask_jwt_extended import jwt_required
+from flask_jwt_extended import get_jwt, jwt_required
 
 from utils.decorators import access_pass
 from controllers.auth.login_controller import LoginController
@@ -37,6 +37,7 @@ class LogoutUser(MethodView):
         logger.info(f"{[g.request_id]} user logged out!")
         return LogoutController().logout_user()
 
+
 @blp.route("/change-password")
 class ChangePassword(MethodView):
 
@@ -47,3 +48,16 @@ class ChangePassword(MethodView):
 
         new_password = change_password_info["new_password"]
         return ChangePasswordController().change_password(new_password)
+
+
+@blp.route("/role")
+class UserRole(MethodView):
+
+    @jwt_required()
+    def get(self):
+        """Returns the role of the user."""
+
+        token = get_jwt()
+        return {
+            "role": token["role"]
+        }

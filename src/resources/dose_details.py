@@ -33,7 +33,7 @@ class DoseDetails(MethodView):
     @access_pass(["Employee"])
     @blp.arguments(AddDoseDetailsSchema)
     def put(self, update_dose_info):
-        """Updates the dose details of an employee"""
+        """Updates the dose details of a user"""
 
         logger.info("[{g.request_id}] hits /users/dose put method endpoint")
         return self.update_dose.update_dose_info(update_dose_info)
