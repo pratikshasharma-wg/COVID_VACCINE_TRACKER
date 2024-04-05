@@ -4,7 +4,7 @@ from database.database_operations import db
 from flask.views import MethodView
 from flask_smorest import Blueprint
 
-from schemas.vaccine import CreateVaccineSchema, VaccineIdSchema
+from schemas.vaccine import CreateVaccineSchema
 from config.queries.db_queries import DbConfig #remove after
 from utils.decorators import access_pass
 from controllers.vaccine.add_vaccine_controller import AddVaccineController
@@ -50,4 +50,4 @@ class RemoveVaccine(MethodView):
         db.save_data(DbConfig.REMOVE_VACCINE, vaccine_id)
         return {
             "message": "Vaccine deleted successfully"
-        }
+        }, 200
