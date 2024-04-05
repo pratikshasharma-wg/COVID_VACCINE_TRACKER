@@ -19,7 +19,7 @@ class MyProfile(MethodView):
     def __init__(self) -> None:
         self.profile = ProfileController()
 
-    @access_pass(["Employee"])
+    @access_pass(["Employee", "Admin"])
     @blp.arguments(UpdatePersonalDetailsSchema)
     def put(self, user_profile_info):
         """Updates the profile info of an employee"""
@@ -28,7 +28,7 @@ class MyProfile(MethodView):
         return self.profile.update_profile(user_profile_info)
     
 
-    @access_pass(["Employee"])
+    @access_pass(["Employee", "Admin"])
     def get(self):
         """Retreives the profile info of an employee"""
 
