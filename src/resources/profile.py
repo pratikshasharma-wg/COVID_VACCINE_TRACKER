@@ -29,8 +29,8 @@ class MyProfile(MethodView):
         logger.info("[{g.request_id}] hits /my-profile put method endpoint")
         return self.profile.update_profile(user_profile_info)
     
-
-    @access_pass(["Employee", "Admin"])
+    @jwt_required()
+    # @access_pass(["Employee", "Admin"])
     def get(self):
         """Retreives the profile info of an employee"""
 
