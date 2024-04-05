@@ -40,11 +40,14 @@ class Vaccine(MethodView):
         logger.info(f"[{g.request_id}] hits /vaccines get method endpoint")
         return self.get_vaccine.get_vaccines()
     
+
+@blp.route("/vaccines/<integer:vaccine_id>")
+class RemoveVaccine(MethodView):
+
     @access_pass(["Admin"])
-    @blp.arguments(VaccineIdSchema)
     def delete(self, vaccine_id):
 
-        db.save_data(DbConfig.REMOVE_VACCINE, vaccine_id["vaccine_id"])
+        db.save_data(DbConfig.REMOVE_VACCINE, vaccine_id)
         return {
             "message": "Vaccine deleted successfully"
         }
