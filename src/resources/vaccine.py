@@ -1,9 +1,11 @@
 import logging
 from flask import g
+from database.database_operations import db
 from flask.views import MethodView
 from flask_smorest import Blueprint
 
-from schemas.vaccine import CreateVaccineSchema
+from schemas.vaccine import CreateVaccineSchema, VaccineIdSchema
+from config.queries.db_queries import DbConfig #remove after
 from utils.decorators import access_pass
 from controllers.vaccine.add_vaccine_controller import AddVaccineController
 from controllers.vaccine.get_vaccines_controller import GetVaccineController
@@ -37,3 +39,12 @@ class Vaccine(MethodView):
 
         logger.info(f"[{g.request_id}] hits /vaccines get method endpoint")
         return self.get_vaccine.get_vaccines()
+    
+    @access_pass(["Admin"])
+    @blp.arguments(VaccineIdSchema)
+    def delete(self, vaccine_id):
+
+        db.save_data(DbConfig.REMOVE_VACCINE, vaccine_id["vaccine_id"])
+        return {
+            "message": "Vaccine deleted successfully"
+        }

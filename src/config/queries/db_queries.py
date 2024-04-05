@@ -53,6 +53,7 @@ class DbConfig:
     ADD_REVOKED_TOKEN = None
     FETCH_REV_TOKEN = None
     CHANGE_PASSWORD = None
+    REMOVE_VACCINE = None
 
     @classmethod
     def load(cls):
@@ -107,5 +108,6 @@ class DbConfig:
             cls.ADD_REV_TOKEN = data['ADD_REV_TOKEN']
             cls.FETCH_REV_TOKEN = data['FETCH_REV_TOKEN']
             cls.CHANGE_PASSWORD = data['CHANGE_PASSWORD']
+            cls.REMOVE_VACCINE = data['REMOVE_VACCINE']
 
 DbConfig.load()
