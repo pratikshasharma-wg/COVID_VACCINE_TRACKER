@@ -38,7 +38,7 @@ class UserHandler:
         if dose_date:
             users = tuple(filter(lambda user: user["dose_date"] == dose_date, users))
         if dose_num:
-            users = tuple(filter(lambda user: user["dose_num"] == dose_num, users))
+            users = tuple(filter(lambda user: str(user["dose_num"]) == str(dose_num), users))
         if vaccine_name:
             users = tuple(filter(lambda user: user["vaccine_name"] == vaccine_name, users))
         
