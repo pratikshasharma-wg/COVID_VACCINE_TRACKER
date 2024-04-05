@@ -23,9 +23,10 @@ class AddVaccineController:
 
         try:
             logger.info(f"[{g.request_id}] created new vaccine named {vaccine_info['vaccine_name']}")
-            self.vaccine_handler.create_vaccine(vaccine_info["vaccine_name"])
+            vaccine_id = self.vaccine_handler.create_vaccine(vaccine_info["vaccine_name"])
             return {
-                Prints.MSG : f"Vaccine with name: {vaccine_info['vaccine_name']} added successfully!!!"
+                Prints.MSG : f"Vaccine with name: {vaccine_info['vaccine_name']} added successfully!!!",
+                "vaccine_id": vaccine_id
             }, 201
         
         except CustomException as e:

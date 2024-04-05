@@ -64,6 +64,7 @@ class DBOperations:
         """
         self.cursor.execute(query, data)
         self.connection.commit()
+        return self.cursor.lastrowid
 
 
     def fetch_data(self, query: str, tup: tuple = None) -> list:

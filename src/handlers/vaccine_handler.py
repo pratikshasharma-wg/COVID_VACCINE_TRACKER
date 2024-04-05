@@ -12,7 +12,7 @@ class VaccineHandler:
         if data:
             raise AlreadyExistsError(409, "Conflict", "Vaccine Already exists!!!")
         else:
-            db.save_data(DbConfig.ADD_VACCINE, (vaccine_name,))
+            return db.save_data(DbConfig.ADD_VACCINE, (vaccine_name,))
 
 
     def get_vaccines(self):
