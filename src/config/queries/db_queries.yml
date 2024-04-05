@@ -127,7 +127,7 @@ FETCH_DOSE_DETAILS_BY_DOSE_CID : 'SELECT * FROM dose_details WHERE dose_cid = %s
 FETCH_DOSE_DETAILS_BY_DOSE2CID : 'SELECT * FROM dose_details WHERE dose_cid = %s and dose_num = 2'
 
 FETCH_USER_DETAILS : 'SELECT user_details.user_id, user_details.email, dose_details.vaccine_name, dose_details.dose_date, dose_details.dose_num
-  FROM user_details LEFT JOIN dose_details 
+  FROM user_details INNER JOIN dose_details 
   ON user_details.user_id = dose_details.user_id'
 
 FETCH_DOSE_0_EMPLOYEES : "SELECT user_details.user_id, user_details.email, dose_details.vaccine_name, dose_details.dose_date, 
