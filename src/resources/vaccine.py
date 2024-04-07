@@ -41,7 +41,7 @@ class Vaccine(MethodView):
         return self.get_vaccine.get_vaccines()
     
 
-@blp.route("/vaccines/<int: vaccine_id>")
+@blp.route("/vaccines/<int:vaccine_id>")
 class RemoveVaccine(MethodView):
 
     @access_pass(["Admin"])
