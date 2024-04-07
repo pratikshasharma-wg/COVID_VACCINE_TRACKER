@@ -2935,3 +2935,16 @@ TypeError: register_error_handlers.<locals>.<lambda>() takes 0 positional argume
 2024-03-07 06:38:17,702 INFO     [authentication.py:26] [5o3TKUQ5RHa5Z5w] hits /login endpoint
 2024-03-07 06:38:17,771 INFO     [login_controller.py:47] [5o3TKUQ5RHa5Z5w] logged in successfully
 2024-03-07 06:38:17,773 INFO     [_internal.py:96] 127.0.0.1 - - [07/Mar/2024 06:38:17] "POST /login HTTP/1.1" 200 -
+2024-04-08 02:49:19,782 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-08 02:49:19,799 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-08 02:49:42,627 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-08 02:49:42,627 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-08 02:49:42,627 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-08 02:49:43,954 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-08 02:49:43,969 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-08 02:52:19,597 INFO     [vaccine.py:40] [kJmSsD5VSPymkcq] hits /vaccines get method endpoint
+2024-04-08 02:52:19,598 INFO     [get_vaccines_controller.py:23] [kJmSsD5VSPymkcq] fetched the list of vaccines
+2024-04-08 02:52:19,648 INFO     [_internal.py:96] 127.0.0.1 - - [08/Apr/2024 02:52:19] "GET /vaccines HTTP/1.1" 200 -
+2024-04-08 02:52:26,225 INFO     [_internal.py:96] 127.0.0.1 - - [08/Apr/2024 02:52:26] "[35m[1mDELETE /vaccines/1 HTTP/1.1[0m" 500 -

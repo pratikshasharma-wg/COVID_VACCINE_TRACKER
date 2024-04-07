@@ -156,4 +156,4 @@ FETCH_REV_TOKEN : "SELECT 1 FROM revoked_tokens WHERE rev_token_jti = %s"
 
 CHANGE_PASSWORD: "UPDATE auth SET password = %s, is_def_pwd_changed = %s WHERE user_id = %s"
 
-REMOVE_VACCINE: "Delete * FROM vaccine WHERE vaccine_id=%s"
+REMOVE_VACCINE: "Delete FROM vaccine WHERE vaccine_id=%s"
