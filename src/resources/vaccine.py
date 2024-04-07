@@ -41,11 +41,11 @@ class Vaccine(MethodView):
         return self.get_vaccine.get_vaccines()
     
 
-@blp.route("/vaccines/<vaccine_id>")
+@blp.route("/vaccines/<int: vaccine_id>")
 class RemoveVaccine(MethodView):
 
     @access_pass(["Admin"])
-    def delete(self, vaccine_id):
+    def delete(self, vaccine_id: int):
 
         db.save_data(DbConfig.REMOVE_VACCINE, vaccine_id)
         return {
