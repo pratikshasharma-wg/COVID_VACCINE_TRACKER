@@ -4,6 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 
 
+from controllers.approve_dose_info.decline_dose_controller import DeclineDoseController
 from utils.decorators import access_pass
 from controllers.user.show_users_controller import ShowUserController
 from controllers.approve_dose_info.approve_dose_controller import ApproveDoseController
@@ -36,6 +37,7 @@ class ApproveDoseInfo(MethodView):
 
     def __init__(self) -> None:
         self.approve_dose = ApproveDoseController()
+        self.decline_dose = DeclineDoseController()
 
 
     @access_pass(["Admin"])
@@ -45,4 +47,9 @@ class ApproveDoseInfo(MethodView):
         logger.info(f"[{g.request_id}] hits /users/approve/{approval_id} put method endpoint")
         approval_id = int(approval_id)
         return self.approve_dose.approve_info(approval_id)
-    
+
+    @access_pass(["Admin"])
+    def delete(self, approval_id):
+        """Decline the dose details of an employee"""
+        logger.info(f"[{g.request_id}] hits /users/approve/{approval_id} delete method endpoint")
+        return self.decline_dose.decline_info(approval_id)

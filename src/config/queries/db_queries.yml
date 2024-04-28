@@ -101,6 +101,10 @@ FETCH_APPROVAL_DATA : |
   and admin_approval.dose_cid = dose_details.dose_cid
   WHERE dose_is_approved = 'No';
 
+DELETE_APPROVAL_RECORD: |
+  DELETE FROM admin_approval
+  WHERE approval_id = %s;
+
 FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
 
 FETCH_VACC_STATUS : 'SELECT count(user_id) FROM dose_details WHERE user_id = %s'

@@ -1,7 +1,8 @@
 import os
 import yaml
+
 current_directory = os.path.dirname(__file__)
-FPATH = os.path.join(current_directory, 'db_queries.yml')
+FPATH = os.path.join(current_directory, "db_queries.yml")
 
 
 class DbConfig:
@@ -17,6 +18,7 @@ class DbConfig:
     FETCH_BY_VACCINE = None
     FETCH_BY_DOSE1_DATE = None
     FETCH_BY_DOSE2_DATE = None
+    DELETE_APPROVAL_RECORD = None
     USER_DOSES = None
     ADD_VACCINE = None
     APPROVE_DOSE_INFO = None
@@ -75,6 +77,7 @@ class DbConfig:
             cls.FETCH_BY_DOSE2_DATE = data["FETCH_BY_DOSE2_DATE"]
             cls.ADD_VACCINE = data["ADD_VACCINE"]
             cls.APPROVE_DOSE_INFO = data["APPROVE_DOSE_INFO"]
+            cls.DELETE_APPROVAL_RECORD = data["DELETE_APPROVAL_RECORD"]
             cls.FETCH_APPROVAL_DATA = data["FETCH_APPROVAL_DATA"]
             cls.FETCH_2APPROVAL_DATA = data["FETCH_2APPROVAL_DATA"]
             cls.FETCH_VACC_STATUS = data["FETCH_VACC_STATUS"]
@@ -91,27 +94,28 @@ class DbConfig:
             cls.FETCH_APPROVED_DATA = data["FETCH_APPROVED_DATA"]
             cls.ADD_USER_DETAILS = data["ADD_USER_DETAILS"]
             cls.FETCH_AUTH_DATA = data["FETCH_AUTH_DATA"]
-            cls.USER_DOSES = data['USER_DOSES']
+            cls.USER_DOSES = data["USER_DOSES"]
             cls.FETCH_VACCINE_NAME = data["FETCH_VACCINE_NAME"]
             cls.FETCH_USER_DETAILS = data["FETCH_USER_DETAILS"]
             cls.IS_DOSE_ID_ALREADY_PRESENT = data["IS_DOSE_ID_ALREADY_PRESENT"]
             cls.FETCH_VACCINE = data["FETCH_VACCINE"]
             cls.FETCH_DOSE_DETAILS_BY_DOSE_CID = data["FETCH_DOSE_DETAILS_BY_DOSE_CID"]
             cls.FETCH_DOSE_DETAILS_BY_DOSE2CID = data["FETCH_DOSE_DETAILS_BY_DOSE2CID"]
-            cls.FETCH_DOSE_0_EMPLOYEES = data['FETCH_DOSE_0_EMPLOYEES']
-            cls.FETCH_DOSE_1_EMPLOYEES = data['FETCH_DOSE_1_EMPLOYEES']
+            cls.FETCH_DOSE_0_EMPLOYEES = data["FETCH_DOSE_0_EMPLOYEES"]
+            cls.FETCH_DOSE_1_EMPLOYEES = data["FETCH_DOSE_1_EMPLOYEES"]
             # cls.FETCH_DOSE_2_EMPLOYEES = data['FETCH_DOSE_2_EMPLOYEES']
-            cls.FETCH_USER = data['FETCH_USER']
+            cls.FETCH_USER = data["FETCH_USER"]
             # cls.FETCH_APPROVAL_DATA_ALL = data['FETCH_APPROVAL_DATA_ALL']
-            cls.FETCH_SPECIFIC_VACCINE = data['FETCH_SPECIFIC_VACCINE']
-            cls.FETCH_USERS_BY_DATE = data['FETCH_USERS_BY_DATE']
-            cls.FETCH_PROFILE = data['FETCH_PROFILE']
-            cls.FETCH_USER_DOSE_2 = data['FETCH_USER_DOSE_2']
-            cls.CREATE_REVOKED_TOKENS_TABLE = data['CREATE_REVOKED_TOKENS_TABLE']
-            cls.ADD_REV_TOKEN = data['ADD_REV_TOKEN']
-            cls.FETCH_REV_TOKEN = data['FETCH_REV_TOKEN']
-            cls.CHANGE_PASSWORD = data['CHANGE_PASSWORD']
-            cls.REMOVE_VACCINE = data['REMOVE_VACCINE']
-            cls.DOSE_ALREADY = data['DOSE_ALREADY']
+            cls.FETCH_SPECIFIC_VACCINE = data["FETCH_SPECIFIC_VACCINE"]
+            cls.FETCH_USERS_BY_DATE = data["FETCH_USERS_BY_DATE"]
+            cls.FETCH_PROFILE = data["FETCH_PROFILE"]
+            cls.FETCH_USER_DOSE_2 = data["FETCH_USER_DOSE_2"]
+            cls.CREATE_REVOKED_TOKENS_TABLE = data["CREATE_REVOKED_TOKENS_TABLE"]
+            cls.ADD_REV_TOKEN = data["ADD_REV_TOKEN"]
+            cls.FETCH_REV_TOKEN = data["FETCH_REV_TOKEN"]
+            cls.CHANGE_PASSWORD = data["CHANGE_PASSWORD"]
+            cls.REMOVE_VACCINE = data["REMOVE_VACCINE"]
+            cls.DOSE_ALREADY = data["DOSE_ALREADY"]
+
 
 DbConfig.load()

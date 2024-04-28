@@ -26,3 +26,6 @@ class ApproveDoseHandler:
             raise NoDataError(204, "No Content", "Incorrect approval id!!!")
 
         db.save_data(DbConfig.APPROVE_DOSE_INFO, (approval_id,))
+
+    def decline_info(self, approval_id):
+        db.fetch_data(DbConfig.DELETE_APPROVAL_RECORD, (approval_id,))
