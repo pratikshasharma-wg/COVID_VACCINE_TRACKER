@@ -29,4 +29,4 @@ class GetDoseController:
             return e.dump(), e.code
         return {
                 "doses": data
-            }, 200
+        }, 200

@@ -99,11 +99,12 @@ USER_DOSES: |
   dose_details.*,
   admin_approval.approval_id,
   admin_approval.dose_is_approved
-  FROM dose_details WHERE user_id = %s
+  FROM dose_details
   INNER JOIN admin_approval
   ON admin_approval.user_id = dose_details.user_id
   and admin_approval.dose_num = dose_details.dose_num
-  and admin_approval.dose_cid = dose_details.dose_cid;
+  and admin_approval.dose_cid = dose_details.dose_cid
+  WHERE dose_details.user_id = %s;
 
 FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = %s'
 

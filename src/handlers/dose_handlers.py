@@ -18,7 +18,10 @@ class DoseHandlers:
 
     def get_user_doses(self, user_id):
         data = db.fetch_data(DbConfig.USER_DOSES, (user_id,))
-        return data if data is not None else []
+        if data is None:
+            return []
+
+        return data
 
 
     def get_vacc_status(self, user_id):

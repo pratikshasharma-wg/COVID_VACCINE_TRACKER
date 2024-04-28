@@ -3647,3 +3647,75 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments but 2 were given
 2024-04-25 18:34:03,493 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 18:34:03] "[35m[1mGET /role HTTP/1.1[0m" 500 -
+2024-04-28 13:33:54,317 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:33:54,317 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:36:04,462 INFO     [authentication.py:26] [nD4AKQjyw9DR5ci] hits /login endpoint
+2024-04-28 13:36:04,661 INFO     [login_controller.py:47] [nD4AKQjyw9DR5ci] logged in successfully
+2024-04-28 13:36:04,662 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:36:04] "POST /login HTTP/1.1" 200 -
+2024-04-28 13:36:08,164 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:36:08] "[33mGET /users/doses HTTP/1.1[0m" 404 -
+2024-04-28 13:36:24,561 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:36:24,562 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:36:24,564 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:36:26,681 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:36:26,681 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:36:33,331 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\resources\\dose_details.py', reloading
+2024-04-28 13:36:33,394 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:36:35,392 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:36:35,392 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:36:38,897 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:36:38,897 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:36:38,897 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:36:40,975 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:36:40,988 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:36:41,148 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:36:41] "[31m[1mGET /users/doses HTTP/1.1[0m" 403 -
+2024-04-28 13:36:50,133 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:36:50] "POST /change-password HTTP/1.1" 200 -
+2024-04-28 13:37:16,026 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:16] "[31m[1mGET /users/doses HTTP/1.1[0m" 403 -
+2024-04-28 13:37:32,083 INFO     [authentication.py:26] [bh98RqjJQUCPCxa] hits /login endpoint
+2024-04-28 13:37:32,136 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:32] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-04-28 13:37:44,548 INFO     [authentication.py:26] [d8YaqTTssrZx4fK] hits /login endpoint
+2024-04-28 13:37:44,698 INFO     [login_controller.py:47] [d8YaqTTssrZx4fK] logged in successfully
+2024-04-28 13:37:44,699 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:44] "POST /login HTTP/1.1" 200 -
+2024-04-28 13:37:46,481 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:46] "[31m[1mGET /users/doses HTTP/1.1[0m" 403 -
+2024-04-28 13:37:50,564 INFO     [profile.py:29] [{g.request_id}] hits /my-profile put method endpoint
+2024-04-28 13:37:50,842 INFO     [profile_controller.py:29] [4ZGmKxSPd8Sag25] profile updated successfully
+2024-04-28 13:37:50,843 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:50] "PUT /my-profile HTTP/1.1" 200 -
+2024-04-28 13:37:53,766 INFO     [authentication.py:26] [fjuQttSWvNYdkGK] hits /login endpoint
+2024-04-28 13:37:53,925 INFO     [login_controller.py:47] [fjuQttSWvNYdkGK] logged in successfully
+2024-04-28 13:37:53,926 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:53] "POST /login HTTP/1.1" 200 -
+2024-04-28 13:37:55,610 INFO     [dose_details.py:31] [{g.request_id}] hits /users/dose post method endpoint
+2024-04-28 13:37:55,757 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:37:55] "[35m[1mGET /users/doses HTTP/1.1[0m" 500 -
+2024-04-28 13:38:40,726 INFO     [_internal.py:96]  * Detected change in 'C:\\Users\\psharma\\OneDrive - WatchGuard Technologies Inc\\Desktop\\Covid_Vaccine_Tracker_API\\src\\config\\queries\\db_queries.py', reloading
+2024-04-28 13:38:40,775 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:38:42,950 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:38:42,950 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:39:49,462 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:39:49,462 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:39:49,462 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:39:51,378 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:39:51,393 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:39:52,743 INFO     [dose_details.py:31] [{g.request_id}] hits /users/dose post method endpoint
+2024-04-28 13:39:52,945 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:39:52] "[35m[1mGET /users/doses HTTP/1.1[0m" 500 -
+2024-04-28 13:40:59,200 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:40:59,201 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:40:59,202 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:41:01,128 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:41:01,131 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:41:02,618 INFO     [dose_details.py:31] [{g.request_id}] hits /users/dose post method endpoint
+2024-04-28 13:41:02,788 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:41:02] "[35m[1mGET /users/doses HTTP/1.1[0m" 500 -
+2024-04-28 13:41:21,821 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 13:41:21,821 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 13:41:21,821 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 13:41:23,796 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 13:41:23,796 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 13:41:23,985 INFO     [dose_details.py:31] [{g.request_id}] hits /users/dose post method endpoint
+2024-04-28 13:41:24,151 INFO     [get_dose_controller.py:27] [iuc2GdMLQcQibsw] get dose details
+2024-04-28 13:41:24,151 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:41:24] "GET /users/doses HTTP/1.1" 200 -
+2024-04-28 13:41:28,957 INFO     [dose_details.py:31] [{g.request_id}] hits /users/dose post method endpoint
+2024-04-28 13:41:29,014 INFO     [get_dose_controller.py:27] [oEad7SoJoNhXjPQ] get dose details
+2024-04-28 13:41:29,016 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 13:41:29] "GET /users/doses HTTP/1.1" 200 -

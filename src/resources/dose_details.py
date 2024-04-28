@@ -16,7 +16,7 @@ blp = Blueprint("dose details", __name__, description="User dose details related
 logger = logging.getLogger(__name__)
 
 
-@blp.route("/users/dose")
+@blp.route("/users/doses")
 class DoseDetails(MethodView):
 
     def __init__(self) -> None:
