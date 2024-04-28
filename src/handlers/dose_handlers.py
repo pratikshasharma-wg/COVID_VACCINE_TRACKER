@@ -1,4 +1,4 @@
-from datetime import datetime
+from mysql.connector.errors import IntegrityError
 
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
@@ -34,25 +34,28 @@ class DoseHandlers:
         if data:
             raise AlreadyExistsError(409, "Conflict", "Dose details already added!!!")
         
-        db.save_data(
-        DbConfig.ADD_DOSE_DETAILS,
-        (
-            user_id,
-            vaccine_name,
-            1,
-            dose_1_date,
-            dose_1_cid,
-        ),
-        )
-
-        db.save_data(
-            DbConfig.ADD_TO_ADMIN_APPROVAL,
+        try:
+            db.save_data(
+            DbConfig.ADD_DOSE_DETAILS,
             (
                 user_id,
+                vaccine_name,
                 1,
+                dose_1_date,
                 dose_1_cid,
             ),
-        )
+            )
+
+            db.save_data(
+                DbConfig.ADD_TO_ADMIN_APPROVAL,
+                (
+                    user_id,
+                    1,
+                    dose_1_cid,
+                ),
+            )
+        except IntegrityError:
+            raise AlreadyExistsError(409, "Conflict", "Dose Id already exists!!!")
         
 
     def update_dose_info(self, user_id, vaccine_name, dose_date, dose_cid):
@@ -62,24 +65,28 @@ class DoseHandlers:
         if data:
             raise AlreadyExistsError(409, "Conflict", "Dose details already added!!!")
         
-        db.save_data(
-        DbConfig.ADD_DOSE_DETAILS,
-        (
-            user_id,
-            vaccine_name,
-            2,
-            dose_date,
-            dose_cid,
-        ),
-        )
-        db.save_data(
-            DbConfig.ADD_TO_ADMIN_APPROVAL,
+        try:
+            db.save_data(
+            DbConfig.ADD_DOSE_DETAILS,
             (
                 user_id,
+                vaccine_name,
                 2,
+                dose_date,
                 dose_cid,
             ),
-        )
+            )
+            db.save_data(
+                DbConfig.ADD_TO_ADMIN_APPROVAL,
+                (
+                    user_id,
+                    2,
+                    dose_cid,
+                ),
+            )
+        except IntegrityError:
+            raise AlreadyExistsError(409, "Conflict", "Dose Id already exists!!!")
+        
 
 
     def get_approved_info(self):
