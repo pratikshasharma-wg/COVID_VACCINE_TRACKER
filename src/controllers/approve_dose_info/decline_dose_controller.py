@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 class DeclineDoseController:
         
     def __init__(self) -> None:
-        self.decline_dose_handler = ApproveDoseHandler()
+        self.approve_dose_handler = ApproveDoseHandler()
             
 
-    def _info(self, approval_id: int) -> None:
+    def decline_info(self, approval_id: int) -> None:
         """ 
             This method is used to approve the details by admin. 
         """
