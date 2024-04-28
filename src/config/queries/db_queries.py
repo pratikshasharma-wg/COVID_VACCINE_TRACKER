@@ -17,6 +17,7 @@ class DbConfig:
     FETCH_BY_VACCINE = None
     FETCH_BY_DOSE1_DATE = None
     FETCH_BY_DOSE2_DATE = None
+    USER_DOSES = None
     ADD_VACCINE = None
     APPROVE_DOSE_INFO = None
     FETCH_APPROVAL_DATA = None
@@ -90,6 +91,7 @@ class DbConfig:
             cls.FETCH_APPROVED_DATA = data["FETCH_APPROVED_DATA"]
             cls.ADD_USER_DETAILS = data["ADD_USER_DETAILS"]
             cls.FETCH_AUTH_DATA = data["FETCH_AUTH_DATA"]
+            cls.USER_DOSES = data['USER_DOSES']
             cls.FETCH_VACCINE_NAME = data["FETCH_VACCINE_NAME"]
             cls.FETCH_USER_DETAILS = data["FETCH_USER_DETAILS"]
             cls.IS_DOSE_ID_ALREADY_PRESENT = data["IS_DOSE_ID_ALREADY_PRESENT"]

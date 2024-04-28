@@ -4,6 +4,7 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 from flask_jwt_extended import jwt_required
 
+from controllers.dose.get_dose_controller import GetDoseController
 from utils.decorators import access_pass
 from controllers.dose.add_dose_controller import AddDoseController
 from controllers.dose.update_dose_controller import UpdateDoseController
@@ -19,8 +20,16 @@ logger = logging.getLogger(__name__)
 class DoseDetails(MethodView):
 
     def __init__(self) -> None:
+        self.get_dose = GetDoseController()
         self.add_dose = AddDoseController()
         self.update_dose = UpdateDoseController()
+
+    @access_pass(["Employee"])
+    def get(self):
+        """Get dose details of a user"""
+
+        logger.info("[{g.request_id}] hits /users/dose post method endpoint")
+        return self.get_dose.get_doses()
 
     @access_pass(["Employee"])
     @blp.arguments(AddDoseDetailsSchema)
