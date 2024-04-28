@@ -86,7 +86,20 @@ DOSE_ALREADY: "Select * from dose_details WHERE user_id = %s and dose_num = %s"
 
 APPROVE_DOSE_INFO : "UPDATE admin_approval SET dose_is_approved = 'Yes' WHERE approval_id = %s"
 
-FETCH_APPROVAL_DATA : "SELECT * FROM admin_approval WHERE dose_is_approved = 'No' "
+FETCH_APPROVAL_DATA : |
+  SELECT
+  admin_approval.*,
+  name,
+  email,
+  vaccine_name
+  FROM admin_approval
+  INNER JOIN user_details
+  ON admin_approval.user_id = user_details.user_id
+  INNER JOIN dose_details
+  ON admin_approval.user_id = dose_details.user_id
+  and admin_approval.dose_num = dose_details.dose_num
+  and admin_approval.dose_cid = dose_details.dose_cid
+  WHERE dose_is_approved = 'No';
 
 FETCH_2APPROVAL_DATA : 'SELECT * FROM admin_approval WHERE dose_is_approved = "No" and dose_num = 2'
 
