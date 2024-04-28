@@ -3818,3 +3818,14 @@ TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments 
 2024-04-28 14:47:44,894 WARNING  [_internal.py:96]  * Debugger is active!
 2024-04-28 14:47:44,894 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
 2024-04-28 14:47:45,455 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 14:47:45] "[31m[1mPOST /users/doses HTTP/1.1[0m" 422 -
+2024-04-28 14:59:39,233 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-28 14:59:39,233 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-28 14:59:39,233 INFO     [_internal.py:96]  * Restarting with stat
+2024-04-28 14:59:41,323 WARNING  [_internal.py:96]  * Debugger is active!
+2024-04-28 14:59:41,323 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-04-28 14:59:54,465 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 14:59:54] "[35m[1mPOST /users/doses HTTP/1.1[0m" 500 -
+2024-04-28 15:00:24,088 INFO     [authentication.py:26] [Ua2J2G2mt6Bp3pT] hits /login endpoint
+2024-04-28 15:00:24,197 INFO     [login_controller.py:47] [Ua2J2G2mt6Bp3pT] logged in successfully
+2024-04-28 15:00:24,197 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 15:00:24] "POST /login HTTP/1.1" 200 -
+2024-04-28 15:00:25,946 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 15:00:25] "[31m[1mPOST /users/doses HTTP/1.1[0m" 422 -
