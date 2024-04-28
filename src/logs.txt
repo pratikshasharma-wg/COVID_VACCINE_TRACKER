@@ -2948,3 +2948,702 @@ TypeError: register_error_handlers.<locals>.<lambda>() takes 0 positional argume
 2024-04-08 02:52:19,598 INFO     [get_vaccines_controller.py:23] [kJmSsD5VSPymkcq] fetched the list of vaccines
 2024-04-08 02:52:19,648 INFO     [_internal.py:96] 127.0.0.1 - - [08/Apr/2024 02:52:19] "GET /vaccines HTTP/1.1" 200 -
 2024-04-08 02:52:26,225 INFO     [_internal.py:96] 127.0.0.1 - - [08/Apr/2024 02:52:26] "[35m[1mDELETE /vaccines/1 HTTP/1.1[0m" 500 -
+2024-04-25 16:10:54,739 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-04-25 16:10:54,740 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-25 16:13:08,334 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] code 400, message Bad request version ('localhost\x00\x17\x00\x00\x00')
+2024-04-25 16:13:08,334 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Í.×Äü\x8c\x04¼zK\x87«~B°t\x88QºÉ\x82sÅ\x8d\x18¤¸¥MÓ¦\x87 Ù¡ÿ\x95RJ\x9b\x8dº$\x0b\x0ey"á=Â\x91lö¡ÞF\x05Ã/\x7f\x8bø½\x1e.\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93úú\x00\x00\x00+\x00\x07\x06ZZ\x03\x04\x03\x03\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00\x00#\x00\x00\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00\x17\x00\x00\x00[0m" 400 -
+2024-04-25 16:13:08,584 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] code 400, message Bad request version ('\x03Å»º\x81¿Ì¨MxÊQ\x00')
+2024-04-25 16:13:08,584 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] "[31m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x035ÁANÐ9b\x0b¾\x91>i´2\x8e\x83THÁNª\x03W\x02\x89_×Rûæ$g \x87tµ:À\x88!²¶Ïpwf^©4kìÌ\x1d\x03Å»º\x81¿Ì¨MxÊQ\x00 [0m" 400 -
+2024-04-25 16:13:08,634 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] code 400, message Bad request version ('dH\x05\x12\x03ÂJJ"e~´rþ~|y`J')
+2024-04-25 16:13:08,634 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] "[31m[1m\x16\x03\x01\x02L\x01\x00\x02H\x03\x03MLÔ¬¾UØ\x13ø\x1c>táÃtJñ\x89\x91.é©\x04f\x0fë\x80\x99r\x84\x9dÿ A\x1ct\x19$\x02\x9cÈùq§>äp\x1e»NÒ\x89Á\x9bÖ\x94¾ö5\x13\x9a5.u&\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ßjj\x00\x00\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x01\x1a\x00\x00\x01\x00\x01<\x00 \x02\x1fõØ\x89®ÚÛ\x19u\x9a\x91 \x0e½,Þº\x10\x02\x81¿~ó\x93kòTÍ\x98ºH\x00ð¬\x1aN§¬W\x9cbîÖ®ü\x05|Í\x08°ùW+\x91\x1fÊöèñ«\x06\x19ý\x11+®2\x0cdH\x05\x12\x03ÂJJ"e~´rþ~|y`J[0m" 400 -
+2024-04-25 16:13:08,895 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] code 400, message Bad request version ('è-3º¥ë\x93¸(\x81ocR\x93~Yó\x96/ÅIâ\x0fâ¶>\x95ÓeµÑÿ\x00')
+2024-04-25 16:13:08,895 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:13:08] "[31m[1m\x16\x03\x01\x02L\x01\x00\x02H\x03\x03E\x0eôã>\x92ê\x02¡0þÔ\x06@\x0940\x8c:ê\x0d@ü\x1bÌñ\x87\x96W"\x83¡ è-3º¥ë\x93¸(\x81ocR\x93~Yó\x96/ÅIâ\x0fâ¶>\x95ÓeµÑÿ\x00 [0m" 400 -
+2024-04-25 16:15:00,745 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:00] "[33mGET / HTTP/1.1[0m" 404 -
+2024-04-25 16:15:00,833 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-25 16:15:28,266 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3000
+2024-04-25 16:15:28,266 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-04-25 16:15:49,127 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] code 400, message Bad request version ('òGæ\x16iÐEa¹F´\x15(H\x10\x00wpu§íõ3u\'\x82\x8b\x8d\x90f\x96.©ÞøÑ\x08\x018±i5¹¾\x95F_Lá"ÎYú\x97\x16\x938úý\'Fy\x8e\x16bá*r\x10¡|\x91\x80/CÆ\x9d\x87·R\x10\x11ÒZ|Á6§a)\x00\x1b\x00\x03\x02\x00\x02\x00')
+2024-04-25 16:15:49,127 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] "[31m[1m\x16\x03\x01\x02L\x01\x00\x02H\x03\x03üS\x8fÌâ÷/u\x93Bv·Â!Ù­Í­bíßMH~Ì\x0eY><U¢\x83 ùû\x88n£\x04ÜÞ\x0eä\x04\x96k\x83h\x00´\x1f\x1f]è\x0e9\x82J\x9a\x85\\\x10Ç\x03Ó\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ßÚÚ\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00+\x00\x07\x06jj\x03\x04\x03\x03\x00\x12\x00\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x01\x1a\x00\x00\x01\x00\x01\x91\x00 æ=üm\x7fa\x15&\x96\x19\x02 A=Á>¢F$;Òx\x9cÞ¢½\x95Dz&þO\x00ðã\x8f\x89[\x99ª\x1cÈ\x11\x8a²`DWÀXöBµkßs\x96\x11h£ÿ\x1d\x1a(¯î\x93äô\x89åü©\x06}\x17ö\x16áàeg@è{_H\x94¶\x8a\x90ß÷\x93\x11OL½´ç\x00.nYß\\F>\x11Ì\x82ÔGê\x9f¢ßl·W#|\x11\x0b\x98à\x8daAf\x85Ï\x98ò\x04E¨\x98Í<÷º_  ©»o\x14vÇÇÅë\x11R¾Ãò8Ê\x9b_#JÃ\x15\x84y¬OW\x0dÏ\x0e\x90\x1f\x01`\x18!\x86\x1b\x09òGæ\x16iÐEa¹F´\x15(H\x10\x00wpu§íõ3u'\x82\x8b\x8d\x90f\x96.©ÞøÑ\x08\x018±i5¹¾\x95F_Lá"ÎYú\x97\x16\x938úý'Fy\x8e\x16bá*r\x10¡|\x91\x80/CÆ\x9d\x87·R\x10\x11ÒZ|Á6§a)\x00\x1b\x00\x03\x02\x00\x02\x00[0m" 400 -
+2024-04-25 16:15:49,377 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] code 400, message Bad request version ('ýK')
+2024-04-25 16:15:49,377 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] "[31m[1m\x16\x03\x01\x02L\x01\x00\x02H\x03\x03ïåG\x9f\x08%ó¨\x1dd;©V\x03\x80TâÂqbØû¿d\x99\x97ñ7L¢*V ýK[0m" 400 -
+2024-04-25 16:15:49,443 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] code 400, message Bad request version ('Di\x00\x05\x00\x03\x02h2\x00')
+2024-04-25 16:15:49,443 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] "[31m[1m\x16\x03\x01\x02\x0c\x01\x00\x02\x08\x03\x03\x9amÍA\x08ep¹\x11xÀ\x9d®\x1a<'ÊÎ\x99\x86Á½¿(Ñ²±\x93M\x9a0Û \x1f¿\x95\x96½ºs\x10j\x8a\x17\x8d¹\x86\x97ú\x8füR´£b\x08p´j kå\x1ab\x02\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x9fzz\x00\x00þ\x0d\x00Ú\x00\x00\x01\x00\x01\x85\x00 ?äçb×Ü\x94ñ\x05ÐÕ»\x86HýËçèW)ú\x06ÅsJ\x9dó3|\x07mi\x00°ë5<Á\x9a\x99?l\x03/\x16Z©\x1d¿OÐÚx.µùZõ Ü\x1e\x0b\x10Qüü¸\x00´ÐÎ`\x07\x8erB»O~\x89\x19%ßÊ\x1c/¤ë÷Å+z¨r\x8a\x98\x95PÆ\x87ìlÃ\x96Ì\x13V9\x9bd{Ó<²å|Ò¦\x1f.\x09(àÅãôÇí,sÞ\x0b\x84e\x8dã<E%Äg®ÂÉ~\x972\x17\x15\x15@J)\x821£A\x81Ê4\x9d¬h»ÑyF?\x8d\\øëË\x1e8þs\x88jë§\x8b\x97ç\x15ùS2\x83m\x90Ò\x8f\x0c+¤,Dõ!*ÕþÏÆÔw\x8fF\x1cDi\x00\x05\x00\x03\x02h2\x00[0m" 400 -
+2024-04-25 16:15:49,688 ERROR    [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] code 400, message Bad request version ('\x8fv\x90ï§31\x8fí\x89ñ\x1a\x8c*\x05Þr¶Û·CÔ\x99\x8eïíô>nõ\x87\x9b\x00')
+2024-04-25 16:15:49,688 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:15:49] "[31m[1m\x16\x03\x01\x02\x0c\x01\x00\x02\x08\x03\x03LF,\x0c+*,\x90í%A\x8dy»\x82Ãy:>û¬\x1fO\x10#è\x8fl\x8c±K¢ \x8fv\x90ï§31\x8fí\x89ñ\x1a\x8c*\x05Þr¶Û·CÔ\x99\x8eïíô>nõ\x87\x9b\x00 [0m" 400 -
+2024-04-25 16:16:12,320 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:16:12] "[33mGET / HTTP/1.1[0m" 404 -
+2024-04-25 16:16:12,406 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:16:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-25 16:17:12,435 INFO     [authentication.py:26] [F4Jf9z3fnrfxURy] hits /login endpoint
+2024-04-25 16:17:12,519 INFO     [login_controller.py:47] [F4Jf9z3fnrfxURy] logged in successfully
+2024-04-25 16:17:12,520 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:17:12] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:17:14,790 INFO     [authentication.py:26] [ziZ4oidUR9FDjbW] hits /login endpoint
+2024-04-25 16:17:14,868 INFO     [login_controller.py:47] [ziZ4oidUR9FDjbW] logged in successfully
+2024-04-25 16:17:14,868 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:17:14] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:17:46,939 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:17:46] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 16:17:47,188 INFO     [authentication.py:26] [hooU98tUbHWr5iz] hits /login endpoint
+2024-04-25 16:17:47,271 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:17:47] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2024-04-25 16:18:12,931 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:12] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 16:18:13,198 INFO     [authentication.py:26] [Wfim4YEPQY7sjfT] hits /login endpoint
+2024-04-25 16:18:13,265 INFO     [login_controller.py:47] [Wfim4YEPQY7sjfT] logged in successfully
+2024-04-25 16:18:13,265 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:13] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:18:13,289 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:13] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:18:13,597 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:13] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:18:41,860 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:41] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:18:42,257 INFO     [users.py:30] {g.request_id}] hits /users post method endpoint
+2024-04-25 16:18:42,257 INFO     [add_user_controller.py:23] [DndtnRVSWSp65Ha] added new user
+2024-04-25 16:18:42,681 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:42] "[35m[1mPOST /users HTTP/1.1[0m" 201 -
+2024-04-25 16:18:55,666 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:55] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:18:56,061 INFO     [show_users_controller.py:27] [ENi2AMJvdFFpJeR] fetched all the users
+2024-04-25 16:18:56,140 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:18:56,140 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:18:56] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:24:53,747 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:53] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 16:24:53,996 INFO     [authentication.py:26] [86v32rKTo5GNA4H] hits /login endpoint
+2024-04-25 16:24:54,080 INFO     [login_controller.py:47] [86v32rKTo5GNA4H] logged in successfully
+2024-04-25 16:24:54,080 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:54] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:24:54,103 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:54] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:24:54,413 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:54] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:24:57,674 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:57] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:24:58,062 INFO     [show_users_controller.py:27] [uYU2qgEQbr2EGAV] fetched all the users
+2024-04-25 16:24:58,141 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:24:58,141 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:24:58] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:25:12,352 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:25:12] "OPTIONS /users?dose-date=04/06/2024 HTTP/1.1" 200 -
+2024-04-25 16:25:12,745 INFO     [show_users_controller.py:27] [JtAWV9NkAkBjraR] fetched all the users
+2024-04-25 16:25:12,825 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:25:12,825 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:25:12] "GET /users?dose-date=04/06/2024 HTTP/1.1" 200 -
+2024-04-25 16:26:09,159 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:09] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:26:09,471 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:09] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:26:09,473 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:09] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:26:09,794 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:09] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:26:09,796 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:09] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:26:10,126 INFO     [show_users_controller.py:27] [XN2kce7N6PRPPA6] fetched all the users
+2024-04-25 16:26:10,223 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:26:10,223 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:10] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:26:10,292 INFO     [show_users_controller.py:27] [LPt3JDSwhRw9pMk] fetched all the users
+2024-04-25 16:26:10,386 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:26:10,386 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:10] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:26:24,927 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:24] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:26:24,927 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:24] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:26:25,167 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:26:25,247 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:26:25,473 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:26:25,488 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:26:25,648 INFO     [show_users_controller.py:27] [N4HzScj4hcQG3d2] fetched all the users
+2024-04-25 16:26:25,715 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:26:25,715 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:26:25,856 INFO     [show_users_controller.py:27] [uyRJQqVYCNE9dJg] fetched all the users
+2024-04-25 16:26:25,941 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:26:25,941 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:26:25] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:02,990 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:02] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:27:03,294 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:03] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:03,548 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:03] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:03,611 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:03] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:03,611 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:03] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:03,943 INFO     [show_users_controller.py:27] [MaxjRxmBnvotPpJ] fetched all the users
+2024-04-25 16:27:04,022 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:04,022 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:04] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:04,127 INFO     [show_users_controller.py:27] [iWjAxNFWhDPdjDQ] fetched all the users
+2024-04-25 16:27:04,195 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:04,195 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:04] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:35,265 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:27:35,265 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:27:35,521 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:35,583 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:35,826 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:35,842 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:35] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:35,973 INFO     [show_users_controller.py:27] [YY5gZoGes6JjNhh] fetched all the users
+2024-04-25 16:27:36,052 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:36,052 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:36] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:36,201 INFO     [show_users_controller.py:27] [Ad5C9MsV2tTYGiu] fetched all the users
+2024-04-25 16:27:36,284 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:36,284 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:36] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:39,932 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:39] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:40,279 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:40] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:40,342 INFO     [show_users_controller.py:27] [dHBCXMK9cYLHmrY] fetched all the users
+2024-04-25 16:27:40,420 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:40,420 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:40] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:40,615 INFO     [show_users_controller.py:27] [kgrfJWsfQgT9U9J] fetched all the users
+2024-04-25 16:27:40,681 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:40,681 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:40] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:47,893 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:47] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:27:48,212 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:48] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:48,472 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:48] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:27:48,519 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:48] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:48,535 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:48] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:27:48,877 INFO     [show_users_controller.py:27] [8vHk2iVjKSr8i8z] fetched all the users
+2024-04-25 16:27:48,960 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:48,960 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:48] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:27:49,042 INFO     [show_users_controller.py:27] [YxvVbdpRcrhiqSM] fetched all the users
+2024-04-25 16:27:49,113 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:27:49,113 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:27:49] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:15,527 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:15] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:28:15,543 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:15] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:28:15,794 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:15] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:15,842 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:15] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:16,110 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:16] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:28:16,110 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:16] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:28:16,251 INFO     [show_users_controller.py:27] [PVb64pEJkQ2EriZ] fetched all the users
+2024-04-25 16:28:16,330 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:16,330 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:16] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:16,494 INFO     [show_users_controller.py:27] [McRjLGkC2KKbtuV] fetched all the users
+2024-04-25 16:28:16,579 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:16,579 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:16] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:28,004 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:28] "OPTIONS /users?dose-date=16/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:28:28,396 INFO     [show_users_controller.py:27] [abnpgxBZpPhCmEh] fetched all the users
+2024-04-25 16:28:28,475 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:28,475 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:28] "GET /users?dose-date=16/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:28:34,405 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:34] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:28:34,712 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:34] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:34,968 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:34] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:28:35,034 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:35,326 INFO     [show_users_controller.py:27] [zL66MHbwRyKNX35] fetched all the users
+2024-04-25 16:28:35,408 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:35,408 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:35] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:35,483 INFO     [show_users_controller.py:27] [aqsQWYgrE5eSmLh] fetched all the users
+2024-04-25 16:28:35,561 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:35,561 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:35] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:38,397 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:38] "OPTIONS /users?dose-date=18/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:28:38,742 INFO     [show_users_controller.py:27] [zwqd3cjkRA7NCMy] fetched all the users
+2024-04-25 16:28:38,821 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:38,821 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:38] "GET /users?dose-date=18/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:28:48,985 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:48] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:28:49,290 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:49,547 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:49,602 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:49] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:28:49,602 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:49] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:28:49,945 INFO     [show_users_controller.py:27] [SXkDwJCyVpiWWCm] fetched all the users
+2024-04-25 16:28:50,023 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:50,023 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:50] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:50,114 INFO     [show_users_controller.py:27] [WEFMQBPnid3jXX7] fetched all the users
+2024-04-25 16:28:50,187 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:50,187 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:50] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:53,332 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:53] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:53,672 INFO     [show_users_controller.py:27] [v7mG728fThZCSu2] fetched all the users
+2024-04-25 16:28:53,739 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:53,739 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:53] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:53,922 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:53] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:28:54,327 INFO     [show_users_controller.py:27] [yUG7mRWJ8JFnt6U] fetched all the users
+2024-04-25 16:28:54,409 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:54,409 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:54] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:28:57,219 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:57] "OPTIONS /users?dose-date=10/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:28:57,613 INFO     [show_users_controller.py:27] [qN76FHv7WyPH42R] fetched all the users
+2024-04-25 16:28:57,691 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:28:57,691 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:28:57] "GET /users?dose-date=10/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:29:04,556 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:04] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:04,864 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:05,114 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:05] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:05,180 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:05] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:05,279 INFO     [show_users_controller.py:27] [NkJFfxQD4Fo2piS] fetched all the users
+2024-04-25 16:29:05,373 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:05,373 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:05] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:05,483 INFO     [show_users_controller.py:27] [k4Me6XMvhRDJure] fetched all the users
+2024-04-25 16:29:05,577 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:05,577 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:05] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:08,789 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:08] "OPTIONS /users?dose-date=18/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:29:09,183 INFO     [show_users_controller.py:27] [escCZkwZGKtjY9Z] fetched all the users
+2024-04-25 16:29:09,262 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:09,262 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:09] "GET /users?dose-date=18/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:29:18,971 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:18] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:19,287 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:19] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:19,546 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:19] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:19,594 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:19] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:19,594 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:19] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:19,947 INFO     [show_users_controller.py:27] [u9koutzbfoDm9CC] fetched all the users
+2024-04-25 16:29:20,031 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:20,032 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:20] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:20,099 INFO     [show_users_controller.py:27] [MHixGN2c4w2sQnA] fetched all the users
+2024-04-25 16:29:20,182 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:20,182 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:20] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:43,302 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:43,315 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:43,559 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:43,605 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:43,864 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:43,880 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:43] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:43,997 INFO     [show_users_controller.py:27] [WxBMHpCQonrWDeu] fetched all the users
+2024-04-25 16:29:44,079 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:44,079 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:44] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:44,241 INFO     [show_users_controller.py:27] [Uw2by2Ht8kCHzQc] fetched all the users
+2024-04-25 16:29:44,335 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:44,335 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:44] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:48,937 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:48] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:49,239 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:49,497 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:49,547 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:49] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:49,547 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:49] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:49,895 INFO     [show_users_controller.py:27] [ZGcsSgz7f75CF8e] fetched all the users
+2024-04-25 16:29:49,965 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:49,965 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:49] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:50,045 INFO     [show_users_controller.py:27] [JTFgwSau3FHhp23] fetched all the users
+2024-04-25 16:29:50,124 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:50,124 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:50] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:55,214 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:55,246 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:29:55,485 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:55,532 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:29:55,790 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:55,805 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:55] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:29:55,929 INFO     [show_users_controller.py:27] [HyvrhBDVK2Ed5xC] fetched all the users
+2024-04-25 16:29:56,014 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:56,014 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:56] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:29:56,188 INFO     [show_users_controller.py:27] [m6yEuzKCr93y4XB] fetched all the users
+2024-04-25 16:29:56,267 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:29:56,268 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:29:56] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:30:14,323 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:14] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:30:14,629 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:14] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:30:14,880 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:14] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:30:14,945 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:14] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:30:14,945 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:14] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:30:15,277 INFO     [show_users_controller.py:27] [AzAjdcw6ekGUzb5] fetched all the users
+2024-04-25 16:30:15,357 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:15,357 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:15] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:30:15,433 INFO     [show_users_controller.py:27] [hHENvSyAyoczk93] fetched all the users
+2024-04-25 16:30:15,524 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:15,525 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:15] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:30:32,384 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:32] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:30:32,636 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:32] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:30:32,704 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:32] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:30:33,019 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:33] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:30:33,019 INFO     [show_users_controller.py:27] [unPKnfkGX4KLQWV] fetched all the users
+2024-04-25 16:30:33,102 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:33,102 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:33] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:30:33,302 INFO     [show_users_controller.py:27] [ZPvJzCh2cLRh4Rr] fetched all the users
+2024-04-25 16:30:33,377 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:33,377 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:33] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:30:36,582 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:36] "OPTIONS /users?dose-date=19/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:30:36,974 INFO     [show_users_controller.py:27] [Pkfh6vqRboBBpCg] fetched all the users
+2024-04-25 16:30:37,054 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:37,054 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:37] "GET /users?dose-date=19/04/2024 HTTP/1.1" 200 -
+2024-04-25 16:30:53,767 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:53] "OPTIONS /users?dose-date=12/12/2022 HTTP/1.1" 200 -
+2024-04-25 16:30:54,162 INFO     [show_users_controller.py:27] [PKT2upry2DN84Pi] fetched all the users
+2024-04-25 16:30:54,240 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:30:54,240 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:30:54] "GET /users?dose-date=12/12/2022 HTTP/1.1" 200 -
+2024-04-25 16:31:07,798 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:07] "OPTIONS /users?dose-date=12/12/2022&vaccine=CoVaxin HTTP/1.1" 200 -
+2024-04-25 16:31:08,192 INFO     [show_users_controller.py:27] [EjJrY2SF6sNz4Sa] fetched all the users
+2024-04-25 16:31:08,271 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:31:08,271 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:08] "GET /users?dose-date=12/12/2022&vaccine=CoVaxin HTTP/1.1" 200 -
+2024-04-25 16:31:33,567 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:33] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:31:33,874 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:33] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:31:34,130 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:34] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:31:34,177 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:34] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:31:34,193 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:34] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:31:34,531 INFO     [show_users_controller.py:27] [7KvzDkjw62Xom4y] fetched all the users
+2024-04-25 16:31:34,609 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:31:34,609 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:34] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:31:34,688 INFO     [show_users_controller.py:27] [aGE2qZEUmpv9FdB] fetched all the users
+2024-04-25 16:31:34,783 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:31:34,783 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:34] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:31:56,641 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:56] "OPTIONS /users?dose-num=2 HTTP/1.1" 200 -
+2024-04-25 16:31:56,970 INFO     [show_users_controller.py:27] [NQC2ops7ybdSPsZ] fetched all the users
+2024-04-25 16:31:57,049 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:31:57,049 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:31:57] "GET /users?dose-num=2 HTTP/1.1" 200 -
+2024-04-25 16:32:28,975 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:28] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:32:29,279 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:29] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:32:29,547 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:29] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:32:29,584 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:29] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:32:29,598 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:29] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:32:29,959 INFO     [show_users_controller.py:27] [HuGDJMABMbyENam] fetched all the users
+2024-04-25 16:32:30,031 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:32:30,031 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:30] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:32:30,114 INFO     [show_users_controller.py:27] [EBkj4qJMAhjugYq] fetched all the users
+2024-04-25 16:32:30,197 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:32:30,197 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:30] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:32:35,306 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:32:35,306 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:32:35,567 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:32:35,619 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:32:35,883 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:32:35,883 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:35] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:32:36,000 INFO     [show_users_controller.py:27] [HtLhgeVvCpqd2o5] fetched all the users
+2024-04-25 16:32:36,083 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:32:36,083 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:36] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:32:36,266 INFO     [show_users_controller.py:27] [6FZi59biqzkhwy5] fetched all the users
+2024-04-25 16:32:36,350 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:32:36,350 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:32:36] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:33:34,875 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:33:34] "OPTIONS /users?dose-num=3 HTTP/1.1" 200 -
+2024-04-25 16:33:35,272 INFO     [show_users_controller.py:27] [pc9QtvSptmdjjVU] fetched all the users
+2024-04-25 16:33:35,350 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:33:35,350 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:33:35] "GET /users?dose-num=3 HTTP/1.1" 200 -
+2024-04-25 16:33:57,140 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:33:57] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:33:57,541 INFO     [show_users_controller.py:27] [owA5ZW7Z4nUMpug] fetched all the users
+2024-04-25 16:33:57,614 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:33:57,614 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:33:57] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:34:22,408 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:22] "OPTIONS /users/approve HTTP/1.1" 200 -
+2024-04-25 16:34:22,792 INFO     [approved_dose_info.py:30] [deZcSCC2msDa685] hits /users/approve get method endpoint
+2024-04-25 16:34:22,870 INFO     [get_approved_info_controller.py:27] [deZcSCC2msDa685] fetched the list of unapproved data
+2024-04-25 16:34:22,870 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:22] "GET /users/approve HTTP/1.1" 200 -
+2024-04-25 16:34:36,111 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:36] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:34:36,493 INFO     [show_users_controller.py:27] [fAfqVgUS4663E4o] fetched all the users
+2024-04-25 16:34:36,571 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:34:36,587 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:36] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:34:39,591 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:39] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:34:39,966 INFO     [vaccine.py:40] [hjTVaMBGdFjSXvo] hits /vaccines get method endpoint
+2024-04-25 16:34:39,966 INFO     [get_vaccines_controller.py:23] [hjTVaMBGdFjSXvo] fetched the list of vaccines
+2024-04-25 16:34:40,056 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:40] "GET /vaccines HTTP/1.1" 200 -
+2024-04-25 16:34:43,771 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:43] "OPTIONS /users/approve HTTP/1.1" 200 -
+2024-04-25 16:34:44,165 INFO     [approved_dose_info.py:30] [CiDiFps7uvk9MYx] hits /users/approve get method endpoint
+2024-04-25 16:34:44,248 INFO     [get_approved_info_controller.py:27] [CiDiFps7uvk9MYx] fetched the list of unapproved data
+2024-04-25 16:34:44,248 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:44] "GET /users/approve HTTP/1.1" 200 -
+2024-04-25 16:34:50,795 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:50] "OPTIONS /users/approve/18 HTTP/1.1" 200 -
+2024-04-25 16:34:51,180 INFO     [approved_dose_info.py:45] [RWAQMN3JzJcGWDx] hits /users/approve/18 put method endpoint
+2024-04-25 16:34:51,431 INFO     [approve_dose_controller.py:23] [RWAQMN3JzJcGWDx] approved user details
+2024-04-25 16:34:51,431 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:34:51] "PUT /users/approve/18 HTTP/1.1" 200 -
+2024-04-25 16:35:09,300 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:35:09] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:35:09,681 INFO     [vaccine.py:40] [T3H7TZbtnPxak5Z] hits /vaccines get method endpoint
+2024-04-25 16:35:09,681 INFO     [get_vaccines_controller.py:23] [T3H7TZbtnPxak5Z] fetched the list of vaccines
+2024-04-25 16:35:09,760 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:35:09] "GET /vaccines HTTP/1.1" 200 -
+2024-04-25 16:35:54,496 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:35:54] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:35:54,891 INFO     [show_users_controller.py:27] [JReyQe4aFB7kL5C] fetched all the users
+2024-04-25 16:35:54,969 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:35:54,969 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:35:54] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:36:05,780 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:36:05] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:36:06,088 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:36:06] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:36:06,347 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:36:06] "OPTIONS /users HTTP/1.1" 200 -
+2024-04-25 16:36:06,490 INFO     [show_users_controller.py:27] [5YLWj3L2v7EUgVB] fetched all the users
+2024-04-25 16:36:06,578 INFO     [users.py:42] [{g.request_id}] hits /users get method endpoint
+2024-04-25 16:36:06,578 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:36:06] "GET /users HTTP/1.1" 200 -
+2024-04-25 16:37:00,992 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:00] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 16:37:01,303 INFO     [authentication.py:26] [iptywf9MVHePJoQ] hits /login endpoint
+2024-04-25 16:37:01,454 INFO     [login_controller.py:47] [iptywf9MVHePJoQ] logged in successfully
+2024-04-25 16:37:01,454 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:01] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:37:01,568 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:01] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:37:01,772 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:01] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:37:32,604 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:32] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:37:32,997 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:32] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 16:37:58,826 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:58] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:37:59,131 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:37:59] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:38:12,551 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:38:12] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:38:12,941 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:38:12] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 16:39:28,395 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:28] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:39:28,462 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:28] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:39:28,643 ERROR    [app.py:838] Exception on /role [GET]
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 340, in _decode_jwt_from_request
+    decoded_token = decode_token(encoded_token, csrf_token)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\utils.py", line 128, in decode_token
+    return jwt_manager._decode_jwt_from_config(encoded_token, csrf_value, allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 556, in _decode_jwt_from_config
+    return _decode_jwt(**kwargs, allow_expired=allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\tokens.py", line 95, in _decode_jwt
+    decoded_token = jwt.decode(
+                    ^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 248, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 306, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 772, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 132, in handle_expired_error
+    return self._expired_token_callback(e.jwt_header, e.jwt_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments but 2 were given
+2024-04-25 16:39:28,710 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:28] "[35m[1mGET /role HTTP/1.1[0m" 500 -
+2024-04-25 16:39:28,712 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:28] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:39:49,099 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:49] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:39:49,360 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:39:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:04,035 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:04] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:40:04,350 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:06,966 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:06] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:09,233 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:09] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:23,922 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:23] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:40:24,229 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:24] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:27,909 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:27] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:40:36,333 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:36] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:40:36,588 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:40:36] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:41:12,030 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:12] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:41:12,343 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:12] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:41:15,021 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:15] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:41:35,291 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:41:35,546 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:41:41,953 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:41] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:41:42,267 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:41:42] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:43:47,553 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:43:47] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:43:47,813 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:43:47] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:04,050 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:04] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:44:04,363 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:09,060 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:09] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:44:09,366 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:09] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:12,023 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:12] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:35,332 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:35] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:44:35,591 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:46,300 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:46] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:44:46,613 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:46] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:49,012 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:49] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:51,325 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:51] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:44:59,218 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:59] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:44:59,521 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:44:59] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:45:04,078 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:45:12,358 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:12] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:45:12,625 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:12] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:45:12,948 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:12] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:45:17,194 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:17] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:45:58,982 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:58] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:45:59,300 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:45:59] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:18,994 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:18] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:46:19,309 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:19] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:34,988 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:34] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:46:35,311 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:35] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:39,969 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:39] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:41,145 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:41] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:46:41,408 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:41] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:43,943 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:43] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:46:46,964 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:46] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:46:47,292 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:46:47] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 16:47:07,024 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:07] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:47:07,341 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:07] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:47:16,008 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:16] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:47:16,325 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:16] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:47:41,439 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:41] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:47:41,750 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:41] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:47:57,973 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:57] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:47:58,285 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:47:58] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:48:14,069 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:48:14] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:48:14,381 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:48:14] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:48:15,996 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:48:15] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:48:42,592 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:48:42] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:48:42,843 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:48:42] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:49:27,084 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:27] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:49:27,392 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:27] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:49:41,834 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:41] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:49:42,155 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:42] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:49:52,906 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:52] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:49:53,224 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:49:53] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:50:04,178 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:50:04] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:50:04,493 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:50:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:52:11,835 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:52:11] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:52:12,094 ERROR    [app.py:838] Exception on /role [GET]
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 340, in _decode_jwt_from_request
+    decoded_token = decode_token(encoded_token, csrf_token)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\utils.py", line 128, in decode_token
+    return jwt_manager._decode_jwt_from_config(encoded_token, csrf_value, allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 556, in _decode_jwt_from_config
+    return _decode_jwt(**kwargs, allow_expired=allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\tokens.py", line 95, in _decode_jwt
+    decoded_token = jwt.decode(
+                    ^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 248, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 306, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 772, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 132, in handle_expired_error
+    return self._expired_token_callback(e.jwt_header, e.jwt_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments but 2 were given
+2024-04-25 16:52:12,097 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:52:12] "[35m[1mGET /role HTTP/1.1[0m" 500 -
+2024-04-25 16:54:03,853 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:03] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 16:54:04,103 INFO     [authentication.py:26] [AFqxkTkfSsATYqX] hits /login endpoint
+2024-04-25 16:54:04,269 INFO     [login_controller.py:47] [AFqxkTkfSsATYqX] logged in successfully
+2024-04-25 16:54:04,269 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:04] "POST /login HTTP/1.1" 200 -
+2024-04-25 16:54:04,286 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:04] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:54:04,593 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:54:09,372 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:09] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 16:54:09,753 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:09] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 16:54:45,088 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:45] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:54:45,393 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:54:45] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:56:00,308 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:00] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:56:00,563 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:00] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:56:08,494 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:08] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:56:08,812 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:08] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:56:13,553 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:13] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:56:13,858 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:13] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:56:29,497 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:29] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:56:29,803 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:56:29] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:57:53,231 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:57:53] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:57:53,484 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:57:53] "GET /role HTTP/1.1" 200 -
+2024-04-25 16:58:53,437 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:58:53] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 16:58:53,763 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 16:58:53] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:00:08,347 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:08] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:00:08,594 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:08] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:00:09,407 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:09] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:00:13,689 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:13] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:00:13,948 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:13] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:00:15,366 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:15] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 17:00:15,758 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:15] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:00:19,303 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:19] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:00:19,615 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:00:19] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:01:33,124 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:01:33] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:01:33,381 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:01:33] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:01:48,580 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:01:48] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:01:48,891 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:01:48] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:02:02,536 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:02] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:02:02,854 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:02] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:02:04,859 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:02:19,741 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:19] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:02:20,003 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:20] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:02:42,433 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:42] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:02:42,726 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:42] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:02:56,230 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:56] "OPTIONS /change-password HTTP/1.1" 200 -
+2024-04-25 17:02:56,680 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:02:56] "POST /change-password HTTP/1.1" 200 -
+2024-04-25 17:04:03,316 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:03] "OPTIONS /login HTTP/1.1" 200 -
+2024-04-25 17:04:03,566 INFO     [authentication.py:26] [cw4cToE5FWPfQCx] hits /login endpoint
+2024-04-25 17:04:03,715 INFO     [login_controller.py:47] [cw4cToE5FWPfQCx] logged in successfully
+2024-04-25 17:04:03,715 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:03] "POST /login HTTP/1.1" 200 -
+2024-04-25 17:04:03,733 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:03] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:04:04,036 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:04] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:04:08,123 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:08] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 17:04:08,501 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:08] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:11,698 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:11] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:12,924 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:12] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:34,357 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:34] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 17:04:34,728 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:34] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:50,224 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:50] "OPTIONS /my-profile HTTP/1.1" 200 -
+2024-04-25 17:04:50,535 INFO     [profile.py:29] [{g.request_id}] hits /my-profile put method endpoint
+2024-04-25 17:04:50,833 INFO     [profile_controller.py:29] [gDCAJB5tePXStRX] profile updated successfully
+2024-04-25 17:04:50,833 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:50] "PUT /my-profile HTTP/1.1" 200 -
+2024-04-25 17:04:53,919 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:53] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 17:04:54,299 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:54] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:56,826 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:56] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 17:04:57,130 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:57] "GET /role HTTP/1.1" 200 -
+2024-04-25 17:04:58,201 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:58] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:04:59,423 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:59] "OPTIONS /vaccines HTTP/1.1" 200 -
+2024-04-25 17:04:59,760 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:04:59] "[31m[1mGET /vaccines HTTP/1.1[0m" 403 -
+2024-04-25 17:05:14,745 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:05:14] "OPTIONS /my-profile HTTP/1.1" 200 -
+2024-04-25 17:05:15,049 INFO     [profile.py:29] [{g.request_id}] hits /my-profile put method endpoint
+2024-04-25 17:05:15,347 INFO     [profile_controller.py:29] [si72q9GL8ZHDBfv] profile updated successfully
+2024-04-25 17:05:15,347 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 17:05:15] "PUT /my-profile HTTP/1.1" 200 -
+2024-04-25 18:34:03,206 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 18:34:03] "OPTIONS /role HTTP/1.1" 200 -
+2024-04-25 18:34:03,473 ERROR    [app.py:838] Exception on /role [GET]
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\views.py", line 191, in dispatch_request
+    return current_app.ensure_sync(meth)(**kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\view_decorators.py", line 340, in _decode_jwt_from_request
+    decoded_token = decode_token(encoded_token, csrf_token)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\utils.py", line 128, in decode_token
+    return jwt_manager._decode_jwt_from_config(encoded_token, csrf_value, allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 556, in _decode_jwt_from_config
+    return _decode_jwt(**kwargs, allow_expired=allow_expired)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\tokens.py", line 95, in _decode_jwt
+    decoded_token = jwt.decode(
+                    ^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 162, in decode_complete
+    self._validate_claims(
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 248, in _validate_claims
+    self._validate_exp(payload, now, leeway)
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\jwt\api_jwt.py", line 306, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired")
+jwt.exceptions.ExpiredSignatureError: Signature has expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask\app.py", line 772, in handle_user_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\psharma\.virtualenvs\Covid_Vaccine_Tracker_API-Nu2DzEi9\Lib\site-packages\flask_jwt_extended\jwt_manager.py", line 132, in handle_expired_error
+    return self._expired_token_callback(e.jwt_header, e.jwt_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments but 2 were given
+2024-04-25 18:34:03,493 INFO     [_internal.py:96] 127.0.0.1 - - [25/Apr/2024 18:34:03] "[35m[1mGET /role HTTP/1.1[0m" 500 -

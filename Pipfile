@@ -24,6 +24,7 @@ gunicorn = "*"
 pymysql = "*"
 uuid = "*"
 flask-cors = "*"
+cryptography = "*"
 
 [dev-packages]
 

@@ -61,3 +61,15 @@ class UserRole(MethodView):
         return {
             "role": token["role"]
         }
+    
+@blp.route("/check-first-time")
+class FirstTimeLogin(MethodView):
+
+    @access_pass(["Admin", "Employee"])
+    def get(self):
+        """Checks first time login"""
+
+        return {
+            "message": "Good to go!"
+        }
+    
