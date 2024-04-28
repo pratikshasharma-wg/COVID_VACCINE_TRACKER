@@ -102,8 +102,8 @@ USER_DOSES: |
   FROM dose_details WHERE user_id = %s
   INNER JOIN admin_approval
   ON admin_approval.user_id = dose_details.user_id
-  and admin_approval.dose_num == dose_details.dose_num
-  and admin_approval.dose_cid == dose_details.dose_cid;
+  and admin_approval.dose_num = dose_details.dose_num
+  and admin_approval.dose_cid = dose_details.dose_cid;
 
 FETCH_VACCINE_DETAILS : 'SELECT * FROM vaccine WHERE vaccine_name = %s'
 
