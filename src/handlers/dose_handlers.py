@@ -1,4 +1,4 @@
-from mysql.connector.errors import IntegrityError
+from pymysql.err import IntegrityError
 
 from database.database_operations import db
 from config.queries.db_queries import DbConfig
