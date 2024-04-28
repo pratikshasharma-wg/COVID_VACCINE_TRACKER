@@ -26,6 +26,35 @@ class DoseHandlers:
         
         return data
 
+    def add_dose(self, user_id, vaccine_name, dose_date, dose_cid, dose_number):
+        data = db.fetch_data(DbConfig.DOSE_ALREADY, (user_id, dose_number))
+        if data:
+            raise AlreadyExistsError(409, "Conflict", "Does details already added!")
+
+        try:
+            db.save_data(
+            DbConfig.ADD_DOSE_DETAILS,
+            (
+                user_id,
+                vaccine_name,
+                dose_number,
+                dose_date,
+                dose_cid,
+            ),
+            )
+
+            db.save_data(
+                DbConfig.ADD_TO_ADMIN_APPROVAL,
+                (
+                    user_id,
+                    dose_number,
+                    dose_cid,
+                ),
+            )
+        except IntegrityError:
+            raise AlreadyExistsError(409, "Conflict", "Dose Id already exists!!!")
+
+
 
     def add_dose_info(self, user_id, vaccine_name, dose_1_date, dose_1_cid):
         

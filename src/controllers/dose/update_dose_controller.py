@@ -23,11 +23,12 @@ class UpdateDoseController:
 
         try:
             user_id = get_jwt_identity()
-            self.dose_handler.update_dose_info(
+            self.dose_handler.add_dose(
                 user_id,
                 update_dose_info["vaccine_name"],
                 update_dose_info["dose_date"],
-                update_dose_info["dose_cid"]
+                update_dose_info["dose_cid"],
+                2
             )
             logger.info(f"[{g.request_id}] updated dose details")
 

@@ -23,11 +23,12 @@ class AddDoseController:
 
         user_id = get_jwt_identity()
         try:
-            self.dose_handler.add_dose_info(
+            self.dose_handler.add_dose(
                 user_id, 
                 dose_info["vaccine_name"], 
                 dose_info["dose_date"], 
-                dose_info["dose_cid"]
+                dose_info["dose_cid"],
+                1
             )
             logger.info(f"[{g.request_id}] added dose details")
 
