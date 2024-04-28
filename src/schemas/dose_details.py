@@ -1,8 +1,17 @@
-from marshmallow import fields
-from .schema_utils import CustomSchema
+from marshmallow import fields, ValidationError, validates
+from datetime import datetime
+
+from schemas.schema_utils import CustomSchema
 
 class AddDoseDetailsSchema(CustomSchema):
 
     vaccine_name = fields.Str(required=True)
-    dose_date = fields.Str(required=True)
+    dose_date = fields.Date(format='%d-%m-%Y', required=True)
     dose_cid = fields.Str(required=True)
+
+    @validates('dose_date')
+    def validate_dose_date(self, value):
+        dose_date = datetime.strptime(value, '%d-%m-%Y').date()
+        current_date = datetime.now().date()
+        if dose_date > current_date:
+            raise ValidationError('Only dates till now can be selected.')
