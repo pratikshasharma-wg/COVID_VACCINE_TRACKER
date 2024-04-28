@@ -44,7 +44,7 @@ def register_request_id():
 
 def register_error_handlers():
     app.register_error_handler(Exception, lambda: ({"error": "something happened in server"}, 500))
-    app.register_error_handler(FailedValidation, lambda error: ({error.dump(), error.code}))
+    app.register_error_handler(FailedValidation, lambda error: (error.dump(), error.code))
 
 
 def jwt_handler():
