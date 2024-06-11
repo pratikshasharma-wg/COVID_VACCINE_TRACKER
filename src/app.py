@@ -7,10 +7,10 @@ from flask_cors import CORS
 from database.database_operations import db
 from app_config import (
     app_config, 
+    jwt_handler,
     register_blueprint, 
-    register_error_handlers, 
-    register_request_id, 
-    jwt_handler
+    register_request_id,
+    register_error_handlers 
 )
 
 
@@ -33,10 +33,10 @@ def create_app():
     app = Flask(__name__)
     with app.app_context():
         app_config()
+        jwt_handler()
         register_blueprint()
         register_request_id()
         register_error_handlers()
-        jwt_handler()
 
     return app
 

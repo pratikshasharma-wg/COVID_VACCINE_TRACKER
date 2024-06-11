@@ -36,7 +36,8 @@ class DBOperations:
                     port = 27856
                 )
                 DBOperations.cursor = DBOperations.connection.cursor()
-            except pymysql.Error:
+            except pymysql.Error as error:
+                print(error)
                 print("Connection to DB cannot be made. Please try again!")
 
 
