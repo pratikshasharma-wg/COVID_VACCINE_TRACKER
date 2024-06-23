@@ -3858,3 +3858,34 @@ TypeError: jwt_handler.<locals>.on_expired_token() takes 0 positional arguments 
 2024-04-28 16:55:52,227 INFO     [approved_dose_info.py:30] [yv8FaawdQW8kyJk] hits /users/approve get method endpoint
 2024-04-28 16:55:52,290 INFO     [get_approved_info_controller.py:27] [yv8FaawdQW8kyJk] fetched the list of unapproved data
 2024-04-28 16:55:52,292 INFO     [_internal.py:96] 127.0.0.1 - - [28/Apr/2024 16:55:52] "GET /users/approve HTTP/1.1" 200 -
+2024-06-23 06:47:16,940 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-23 06:47:16,940 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-06-23 06:47:35,685 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-23 06:47:35,685 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-06-23 06:47:35,685 INFO     [_internal.py:96]  * Restarting with stat
+2024-06-23 06:47:37,567 WARNING  [_internal.py:96]  * Debugger is active!
+2024-06-23 06:47:37,583 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-06-23 06:48:20,326 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:4200
+2024-06-23 06:48:20,326 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-06-23 06:48:20,326 INFO     [_internal.py:96]  * Restarting with stat
+2024-06-23 06:48:22,678 WARNING  [_internal.py:96]  * Debugger is active!
+2024-06-23 06:48:22,678 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
+2024-06-23 06:48:35,466 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:48:35] "[33mGET / HTTP/1.1[0m" 404 -
+2024-06-23 06:48:37,543 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:48:37] "[33mGET / HTTP/1.1[0m" 404 -
+2024-06-23 06:48:37,846 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:48:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-06-23 06:48:44,011 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:48:44] "[33mGET /docs HTTP/1.1[0m" 404 -
+2024-06-23 06:50:20,853 INFO     [authentication.py:26] [geaGpGHxkyzeods] hits /login endpoint
+2024-06-23 06:50:20,937 INFO     [login_controller.py:47] [geaGpGHxkyzeods] logged in successfully
+2024-06-23 06:50:20,939 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:50:20] "POST /login HTTP/1.1" 200 -
+2024-06-23 06:53:41,220 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:53:41] "[33mGET / HTTP/1.1[0m" 404 -
+2024-06-23 06:53:46,209 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:53:46] "[33mGET /swagger/docs HTTP/1.1[0m" 404 -
+2024-06-23 06:53:51,498 INFO     [_internal.py:96] 127.0.0.1 - - [23/Jun/2024 06:53:51] "[33mGET /swagger.yaml HTTP/1.1[0m" 404 -
+2024-06-23 06:55:56,942 INFO     [_internal.py:96] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-23 06:55:56,942 INFO     [_internal.py:96] [33mPress CTRL+C to quit[0m
+2024-06-23 06:55:56,960 INFO     [_internal.py:96]  * Restarting with stat
+2024-06-23 06:55:58,831 WARNING  [_internal.py:96]  * Debugger is active!
+2024-06-23 06:55:58,831 INFO     [_internal.py:96]  * Debugger PIN: 102-600-948
