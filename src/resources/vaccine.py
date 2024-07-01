@@ -11,7 +11,7 @@ from controllers.vaccine.add_vaccine_controller import AddVaccineController
 from controllers.vaccine.get_vaccines_controller import GetVaccineController
 
 
-blp = Blueprint("vaccine", __name__, description="Operations on Vaccines")
+blp = Blueprint("Vaccines", __name__, description="Operations on Vaccines")
 
 logger = logging.getLogger(__name__)
 

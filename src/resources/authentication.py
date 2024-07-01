@@ -11,7 +11,7 @@ from controllers.auth.change_password import ChangePasswordController
 from schemas.authentication import LoginUserSchema, ChangePasswordSchema
 
 
-blp = Blueprint("auth", __name__, description = "Login user")
+blp = Blueprint("Auth", __name__, description = "Login user")
 
 logger = logging.getLogger(__name__)
 

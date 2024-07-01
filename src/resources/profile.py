@@ -9,7 +9,7 @@ from schemas.user import UpdatePersonalDetailsSchema
 from controllers.user.profile_controller import ProfileController
 
 
-blp = Blueprint("profile", __name__, description="Update profile")
+blp = Blueprint("Profile", __name__, description="Update profile")
 
 logger = logging.getLogger(__name__)
 

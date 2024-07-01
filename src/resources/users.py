@@ -9,7 +9,7 @@ from controllers.user.add_user_controller import AddUserController
 from controllers.user.show_users_controller import ShowUserController
 
 
-blp = Blueprint("users", __name__, description="User related Operations")
+blp = Blueprint("Users", __name__, description="User related Operations")
 
 logger = logging.getLogger(__name__)
 

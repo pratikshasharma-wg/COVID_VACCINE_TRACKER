@@ -11,7 +11,7 @@ from controllers.dose.update_dose_controller import UpdateDoseController
 from schemas.dose_details import AddDoseDetailsSchema
 
 
-blp = Blueprint("dose details", __name__, description="User dose details related operations")
+blp = Blueprint("Dose Details", __name__, description="User dose details related operations")
 
 logger = logging.getLogger(__name__)
 

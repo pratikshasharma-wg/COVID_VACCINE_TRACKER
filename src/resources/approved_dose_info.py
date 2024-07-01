@@ -11,8 +11,8 @@ from controllers.approve_dose_info.approve_dose_controller import ApproveDoseCon
 from controllers.approve_dose_info.get_approved_info_controller import GetApprovedInfoController
 
 
-approve_blp = Blueprint("approve dose", __name__, description="Approved dose info related Operations")
-get_blp = Blueprint("get approved dose info", __name__, description="Get info to approve")
+approve_blp = Blueprint("Approve Dose", __name__, description="Approve dose info related Operations")
+get_blp = Blueprint("Approve Dose", __name__, description="Get info to approve")
 
 logger = logging.getLogger(__name__)
 
